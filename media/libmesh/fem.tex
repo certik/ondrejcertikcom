@@ -1,0 +1,303 @@
+%&csplain
+
+\input eplain   
+
+%\voffset=-1.5cm
+%\hoffset=-1.5cm
+%\advance \vsize by 3cm
+%\advance \hsize by 3cm
+
+\magnification\magstep1
+%\chyph
+%\csaccents
+%\raggedbottom
+
+\newcount\eqcount
+\def\incno#1{\global\advance\eqcount1\definexref{#1}{\the\eqcount}{eq}}
+\def\no#1{\incno{#1}\eqno{(\the\eqcount)}}
+\def\nno#1{\incno{#1}&{(\the\eqcount)}}
+\def\rno#1{(\refn{#1})}
+
+
+\def\mydots{\leaders\hbox{$\mkern1.5mu.\mkern1.5mu$}\hfill}
+\def\tocsecentry#1#2#3{\line{\bf#2 #1\thinspace\mydots#3}}
+\def\tocsubentry#1#2#3{\line{\quad#2 #1\thinspace\mydots#3}}
+
+\newcount\secno
+\newcount\subno
+\def\secskip{\vskip 18pt plus 6pt minus 6pt}
+
+\font\titlefont=\fontname\tenbf\space scaled\magstep2
+\font\subfont=\fontname\tenbf\space scaled\magstep1
+\font\subsubfont=\fontname\tenbf\space scaled\magstep0
+\font\progfont=cstt8
+\def\title#1{\centerline{\titlefont #1}\bigskip}
+\def\sec#1\par{\advance\secno by1\subno=0\secskip\goodbreak\noindent%
+{\subfont \the\secno. #1}%
+\writenumberedtocentry{sec}{#1}{\the\secno.}\medskip\nobreak\noindent}
+\def\sub#1\par{\advance\subno by 1\medskip\goodbreak\noindent%
+{\edef\n{\the\secno.\the\subno}{\subsubfont\n\ #1}%
+\writenumberedtocentry{sub}{#1}{\n}}\par\nobreak\noindent}
+
+\newcount\figno
+\def\dref#1{\global\advance\figno by 1\definexref{#1}{\the\figno}{}\the\figno}
+
+\font\twelverm=csr12
+\def\d{{\rm d}}
+
+\def\psfig#1#2#3{\medskip\noindent\epsfxsize=\hsize\epsfbox{#1}
+\centerline{Obr. \dref{#2}: #3}\medskip}
+
+\def\y#1{(#1 let)}
+\def\p#1#2{ {\partial#1\over\partial#2} }
+\def\pp#1#2{ {\partial^2#1\over\partial#2^2} }
+\def\degrees{^\circ}
+%\def\Res#1#2{{\rm Res}({#1};{#2})}
+%\def\Res#1#2{{\rm Res}_{#2}{#1}}
+\def\Res#1#2{\mathop{\rm Res}_{#2}{#1}}
+
+%end of macro definitions
+
+\title{FEM}
+
+\centerline{Ondøej Èertík}
+\centerline{May, 2005}
+
+\sec{Introduction}
+
+There is a lot of theoretical information about FEM in the literature or the
+internet, here I only show how to get started - from the start (the PDE
+equation) to the end (matrix elements in the linear equations system for the
+solution) and how to impose boundary conditions. I do not bother about any
+assumptions or whatever, these can be found in the literature.
+
+I am not saying this is the only way of solving PDE using FEM, I just wanted to
+write down (for me and maybe others) what exactly I am doing in my program.
+
+\sec{Poisson Equation}
+
+$$-\nabla\cdot(\lambda\nabla u)=f\,.$$
+
+\sub{Weak Formulation}
+
+We multiply both sides with a test function $v$
+$$-\left(\nabla\cdot(\lambda\nabla u)\right)v=fv\,,$$
+and integrate over the whole volume
+$$\int-\left(\nabla\cdot(\lambda\nabla u)\right)v\,\d V=\int fv\,\d V\,,\no{1}$$
+and using the vector identity
+$$-\left(\nabla\cdot(\lambda\nabla u)\right)v=\lambda\nabla u\cdot
+\nabla v - \nabla\cdot\left(\lambda(\nabla u)v\right),$$
+we rewrite the left hand side of \rno{1}
+$$\int\lambda\nabla u\cdot\nabla v\,\d V=\int fv\,\d V+
+\int\nabla\cdot\left(\lambda(\nabla u)v\right)\d V\,,$$
+now we apply Gauss Theorem
+$$\int\lambda\nabla u\cdot\nabla v\,\d V=\int fv\,\d V+
+\oint\lambda(\nabla u)v\cdot{\bf n}\,\d S\,,$$
+and rewriting $\nabla u\cdot{\bf n}\equiv{\d u\over\d n}$
+$$\int\lambda\nabla u\cdot\nabla v\,\d V=\int fv\,\d V+
+\oint\lambda{\d u\over\d n}v\,\d S\,,\no{w}$$
+which is the weak formulation. The problem reads: find a function $u$ such that
+\rno{w} holds for every $v$.
+
+\sub{Linear Equations}
+
+Now we substitute $\phi_i$ for $v$ and expand $u=\sum u_j\phi_j$
+$$\int\lambda\nabla\phi_j\cdot\nabla\phi_i\,\d Vu_j=\int f\phi_i\,\d V+
+\oint\lambda{\d u\over\d n}\phi_i\,\d S\,,\no{d}$$
+which can be written in a matrix form
+$$K_{ij}u_j=F_i\,,\no{m}$$
+where
+$$\eqalign{
+K_{ij}&=\int\lambda\nabla\phi_j\cdot\nabla\phi_i\,\d V\,,\cr
+F_i&=\int f\phi_i\,\d V+\oint\lambda{\d u\over\d n}\phi_i\,\d S\,.\cr
+}$$
+The matrix $K_{ij}$ is symmetric in this case, but generally it doesn't have to
+be (ie. notice where the $i$'s and $j$'s are).
+
+\sub{Finite Elements}
+
+We decompose the domain into elements, so we need to compute the integrals over
+one finite element:
+$$\eqalign{
+K_{ij}^{E}&=\int\lambda\nabla\phi_j\cdot\nabla\phi_i\,\d V^{E}\approx
+\sum_{q=0}^{N_q-1}\lambda(x_q)\,\nabla\phi_i(x_q)\cdot\nabla\phi_j(x_q)\,
+w_q|\det J(\hat x_q)|\,,\cr
+f_i^{E}&=\int f\phi_i\,\d V^{E}\approx
+\sum_{q=0}^{N_q-1}f(x_q)\,\phi_i(x_q)\, w_q|\det J(\hat x_q)|\,.\cr
+}$$
+The surface integrals are computed accordingly.
+
+\sub{Boundary Conditions}
+
+The Neumann boundary condition is already taken into
+account in \rno{m} - it's the surface integral containing
+${\d u\over\d n}$, so we compute this integral over every element, where 
+${\d u\over\d n}\neq0$.
+
+The Dirichlet boundary condition is imposed by adding the following equation to
+\rno{d} for every element we want to prescribe the value of $u$:
+$$P\int\phi_i\phi_j\,\d Su_j=P\int u_0\,\phi_i\,\d S\,,$$
+where $P$ is some big number (penalty) and $u_0$ is the value of $u$ on the
+boundary. Then the matrices are (on this element) as follows:
+$$\eqalign{
+K_{ij}&=\int\lambda\nabla\phi_j\cdot\nabla\phi_i\,\d V+
+	P\int\phi_i\phi_j\,\d S\,,\cr
+F_i&=\int f\phi_i\,\d V+\oint\lambda{\d u\over\d n}\phi_i\,\d S+
+	P\int u_0\,\phi_i\,\d S\,.\cr
+}$$
+
+The second possibility to impose the Dirichlet boundary condition is to set the
+$i$ row in RHS to $u_0 P$ and the element $i,i$ in the stiffness matrix to
+$P$.
+
+The first way is more general and more precise because we don't bother about
+any nodes, we just need the value of $u_0(x,y,z)$ on the whole boundary (and
+take into account only the $u_0$'s in the Gauss points). The second way is
+better if we just want to set the value of $u$ in some particular nodes.
+
+\sec{Heat Equation}
+
+$$c\p{u}{t}-\nabla\cdot(\lambda\nabla u)=f\,.$$
+
+\sub{Weak Formulation}
+
+In exactly the same way as for the Poisson equation we derive the weak form:
+$$\int c\p{u}{t}v\,\d V+
+\int\lambda\nabla u\cdot\nabla v\,\d V=\int fv\,\d V+
+\oint\lambda{\d u\over\d n}v\,\d S\,,$$
+
+\sub{Linear Equations}
+
+As usual after the substitution $\phi_i$ for $v$ and 
+expansion $u=\sum u_j\phi_j$
+$$\int c\phi_j\phi_i\,\d V\p{u_j}{t}+
+\int\lambda\nabla\phi_j\cdot\nabla\phi_i\,\d Vu_j=\int f\phi_i\,\d V+
+\oint\lambda{\d u\over\d n}\phi_i\,\d S\,,$$
+and a matrix form
+$$C_{ij}\p{u_j}{t}+K_{ij}u_j=F_i\,,$$
+where
+$$\eqalign{
+C_{ij}&=\int c\phi_j\phi_i\,\d V\,,\cr
+K_{ij}&=\int\lambda\nabla\phi_j\cdot\nabla\phi_i\,\d V\,,\cr
+F_i&=\int f\phi_i\,\d V+\oint\lambda{\d u\over\d n}\phi_i\,\d S\,.\cr
+}$$
+
+\sec{Wave Equation}
+
+$${1\over c^2}\pp{u}{t}-\nabla^2u=0\,.$$
+
+\sub{Weak Formulation}
+
+In exactly the same way as for the Poisson equation we derive the weak form:
+$$\int{1\over c^2}\pp{u}{t}v\,\d V+
+\int\nabla u\cdot\nabla v\,\d V=
+\oint{\d u\over\d n}v\,\d S\,,$$
+
+\sub{Linear Equations}
+
+As usual after the substitution $\phi_i$ for $v$ and 
+expansion $u=\sum u_j\phi_j$
+$$\int{1\over c^2}\phi_j\phi_i\,\d V\pp{u_j}{t}+
+\int\nabla\phi_j\cdot\nabla\phi_i\,\d Vu_j=
+\oint{\d u\over\d n}\phi_i\,\d S\,,$$
+and a matrix form
+$$M_{ij}\pp{u_j}{t}+K_{ij}u_j=F_i\,,$$
+where
+$$\eqalign{
+M_{ij}&=\int{1\over c^2}\phi_j\phi_i\,\d V\,,\cr
+K_{ij}&=\int\nabla\phi_j\cdot\nabla\phi_i\,\d V\,,\cr
+F_i&=\oint{\d u\over\d n}\phi_i\,\d S\,.\cr
+}$$
+
+\sec{Libmesh}
+
+Libmesh is a promising finite element method code. Web: {\tt libmesh.sf.net}.
+It's clearly written and has almost everything or can easily be extended.
+
+\sub{Equation systems}
+
+We create one instance of {\tt EquationSystems} class and every equation we
+want to solve (Poisson, Heat, \dots) must be added to this instance by {\tt
+addsystem()} method.
+
+One system (for example Poisson equation) is handled by a class {\tt System} or
+it's children. The {\tt System} class has a method {\tt assemble()}, which just
+calls the user assembly method - it's up to the user what he does.  
+
+{\tt ExplicitSystem} contains {\tt rhs} vector and method {\tt solve()}, which
+just calls {\tt System::assemble()}. 
+
+{\tt ImplicitSystem} contains {\tt matrix} matrix and a method {\tt assemble()}
+which clears {\tt matrix} and {\tt rhs} and calls {\tt 
+System::assemble()}.
+
+{\tt LinearImplicitSystem} contains a method {\tt solve()}, which calls {\tt
+ImplicitSystem::assemble()} and then solves the equation $Ax=b$, where $A$ is
+{\tt matrix} and $b$ is {\tt rhs}. $A$ (= {\tt matrix}) is often referred to as
+a "system matrix".
+
+{\tt NewmarkSystem} implements Newmark integration scheme which solves:
+$$M_{ij}\pp{u_j}{t}+C_{ij}\p{u_j}{t}+K_{ij}u_j=F_i\,,$$
+where $M_{ij}$ is called {\it mass} matrix, $C_{ij}$ {\it damping} matrix,
+$K_{ij}$ {\it stiffness} matrix and $F_i$ {\it force} vector. 
+See example 8. (The Newmark System and the Wave Equation) for usage.
+Reimplements {\tt assemble()}, which calls {\tt
+LinearImplicitSystem::assemble()}, then {\tt compute\_matrix()} and {\tt
+initial\_conditions()}. Subsequent calls to this method do nothing. {\tt
+compute\_matrix()} does: 
+$$A=a_0M+a_1C+K\,.$$ 
+{\tt initial\_conditions()} clears {\tt displacement}, {\tt velocity} and {\tt
+acceleration} vectors and calls user initialization method.
+Uses {\tt LinearImplicitSystem::solve()}, which calls our new {\tt assemble()}
+function. The user assembly method is supposed to change $M$, $C$, $K$ and $F$.
+The user should repeatedly do: {\tt update\_rhs()}, update 
+Dirichlet boundary conditions, {\tt solve()}, save solution, 
+{\tt update\_u\_v\_a()}.
+{\tt update\_rhs()} does:
+$$b=F+M*(a_0u+a_2u'+a_3u'')+C*(a_1u+a_4u'+a_5u'')\,.$$ 
+{\tt update\_u\_v\_a()} does:
+$$u''(i+1)=-a_3u''(i)+a_0u(i+1)-a_0u(i)-a_2u'(i)\,,$$ 
+$$u'(i+1)=u'(i)+a_6u''(i)+a_7u''(i+1)\,.$$ 
+$$\eqalign{
+a_0&={1\over \alpha (\Delta t)^2}\cr
+a_1&={\delta \over \alpha \Delta t}\cr
+a_2&={1\over \alpha \Delta t}\cr
+a_3&={1\over 2\alpha} -1\cr
+a_4&={\delta \over \alpha}-1\cr
+a_5&={\Delta t\over 2}{\delta\over \alpha -2}\cr
+a_6&={\Delta t(1-\delta)}\cr
+a_7&={\delta \Delta t}\cr
+}$$
+
+The Newmark time integration scheme is 
+$$\eqalignno{
+u_{n+1}&=u_n+\Delta t u_n' + {1\over2}(\Delta t)^2\left(
+	\left(1-2\alpha\right)u_n''+2\alpha u_{n+1}'' 
+	\right)\nno{un1}\cr
+u_{n+1}'&=u_n'+\Delta t\left((1-\delta)u_n''+\delta u_{n+1}''\right)\nno{un2}\cr
+}$$
+As you can see, the {\tt update\_u\_v\_a()} method computes $u_{n+1}''$ from
+\rno{un1} and $u_{n+1}'$ from \rno{un2}.
+This scheme in unstable for $\delta<{1\over2}$. For $\delta>{1\over2}$
+it is conditional stable for $\alpha<{(\delta+{1\over2})^2\over4}$,
+uncoditional otherwise. 
+
+Standard {\tt libmesh} values are $\alpha={1\over4}$ and $\delta={1\over2}$.
+This choice of parameters corresponds to a trapezoidal rule (unconditionally
+stable scheme in linear analyses). But for a wave equation from my own
+experience the default values are unstable (even smaller timestep doesn't help)
+only setting $\alpha=1.0$ and $\delta=2.0$ helped. Update: ok I already now
+what's wrong: there is some bug in laspack library, trying petsc works
+perfectly with the default parameters.
+
+how it works: from \rno{un1} we express $n_{n+1}''$
+$$u_{n+1}''={1\over\alpha(\Delta t)^2}u_{n+1}-\left({1\over2\alpha}-1\right)u_n''
+-{1\over\alpha(\Delta t)^2}u_n-{1\over\alpha\Delta t}u_n'$$
+We have this equation
+$$Mu_{n+1}''+Ku_{n+1}=F$$
+and substitute for $u_{n+1}''$ and we get
+$$\left({M\over\alpha(\Delta t)^2}+K\right)u_{n+1}=F+
+M\left(\left({1\over2\alpha}-1\right)u_n''
++{1\over\alpha(\Delta t)^2}u_n+{1\over\alpha\Delta t}u_n'\right)$$
+
+\bye

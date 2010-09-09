@@ -1,0 +1,143 @@
+body {
+	background-color: #fff;
+	font-family: Arial,Helvetica,sans-serif;
+	margin: 10px 0;
+	padding: 0;
+	color: #333;
+}
+html > body {
+	font-family: sans-serif;
+}
+/*
+	modra: #09f;
+	svetla modra: #3CAEFB;
+	sedobila: #eee;
+	seda: #999;
+	text: #333;
+*/
+a {	color: #09f;}
+a:hover {	color: #999;}
+h2 {
+	width: 740px;
+	border-bottom: 1px dashed #09f;
+	margin-top: 0;
+}
+#kontejner {
+	width: 760px;
+	margin: 0 auto;
+	border: 5px solid #eee;
+	position: relative;
+}
+#intro {
+	position: absolute;
+	top: 0;
+	width: 740px;
+	height: 80px;
+	padding: 10px;
+}
+#intro h1 span {
+	display: none;
+}
+#intro h1 a {
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	height: 80px;
+}
+#intro h1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 760px;
+	height: 110px;
+	background-image: url("../graphics/logo.png");
+	/*background-image: url("../graphics/logo2.png");*/
+}
+#intro p {
+	display: none;
+}
+#navigace {
+	position: absolute;
+	top: 80px;
+	height: 20px;
+	width: 740px;
+	padding: 5px 10px;
+}
+#navigace ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	color: #09f;
+	font-size: medium;
+}
+#navigace ul li {
+    margin: 0;
+    margin-right: .5em;
+    padding: 0;
+    float: left;
+}
+head:first-child+body #navigace p {
+	margin: 0;
+}
+#navigace a {
+	text-transform: uppercase;
+	font-weight: bold;
+	/*color: #fff;*/
+	color: #09f;
+	text-decoration: none;
+}
+#navigace a:hover {
+	color: #3CAEFB;
+}
+#navigace h2 {
+	display: none;
+}
+#main {
+	margin-top: 110px;
+	padding: 10px;
+}
+#outro {
+	width: 740px;
+	margin: 10px;
+	border-top: 1px dashed #09f;
+	text-align: center;
+	color: #999;
+	font-size: small;
+}
+#outro hr {
+	display: none;
+}
+#outro p {
+	margin: 1em;
+}
+td.cv
+{
+	width: 5.5em;
+	vertical-align: top;
+	text-align: right;
+}
+ul.ul
+{
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 0;
+}
+pre {
+	font-family: "Courier New", Courier, mono;
+	font-size: small;
+	background-color: #eee;
+	padding: 1em;
+	margin: 0 auto;
+	width: 600px;
+	overflow: auto;
+}
+code {
+	font-family: "Courier New", Courier, mono;
+	color: #666;
+}
+a code {
+	color: inherit;
+}

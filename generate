@@ -1,0 +1,41 @@
+#! /usr/bin/env python
+
+import os
+
+from jinja2 import Environment, FileSystemLoader
+env = Environment(loader=FileSystemLoader('templates'))
+
+templates = [
+        "index.html",
+        "physics.html",
+        "cas.html",
+        "debian.html",
+        "development.html",
+        "texts.html",
+        "links.html",
+        "blog.html",
+        ]
+
+titles = {
+        "index": "Main",
+        "cas": "Computer Algebra Systems",
+        }
+
+output_dir = "_build"
+os.system("rm -rf %s" % output_dir)
+os.system("mkdir %s" % output_dir)
+os.system("cp -r media %s" % output_dir)
+for template in templates:
+    t = env.get_template(template)
+    print "Processing '%s'" % template
+    name = os.path.splitext(template)[0]
+    if name in titles:
+        title = titles[name]
+    else:
+        title = name.upper()[0] + name[1:]
+    ctx = {
+            "MEDIA": "media",
+            "title": title
+            }
+    s = t.render(ctx)
+    open(os.path.join(output_dir, template), "w").write(s.encode("utf-8"))

@@ -1,0 +1,60 @@
+{% extends "base.tpl" %}
+
+{% block content %}
+<p>
+Programming is my hobby and also an essential part of my research and any job
+I would like to do. Here I describe my strategy when writing any kind of
+program.
+
+</p>
+<p>
+I use <a href="http://www.vim.org/">VIM</a> in a linux terminal (I use <a href="http://www.debian.org/">Debian</a>
+and <a href="http://www.gnome.org/">Gnome</a>, but there are other
+options too). I start in <a href="http://www.python.org">Python</a> and write as much as I can in pure Python,
+there are libraries for almost anything. When something doesn't work, I debug
+either using "print" statements (if it's a simple problem) or using a wonderful
+tool <a href="http://www.digitalpeers.com/pythondebugger/">winpdb</a>, that is
+a GUI Python debugger that shows me the source code and contents of
+all the variables etc. - or I just use the Python pdb module.</p>
+<p>
+When I have a reasonably working code, then either it's fast enough (and I am
+done), or it isn't, in which case I use <a href="http://cython.org">Cython</a> to speed it up following these
+steps:
+<ol>
+    <li> Start in pure Python, do your program. It works, or mostly works,
+    but it's slow.</li>
+    <li> Find some places, that are slow, put them in a module, remove all
+    dynamic parts so that Cython can compile it (but it's still Python!).
+    You get a nice C file, you compile it to .so, you import it and your
+    program works as before (no several slow layers, like with SWIG
+    or impossible to debug bindings like with Boost.Python).</li>
+    <li> Then look at the generated C code and find out why it is slow - it
+    will be slow due to a lot of calls to Python C/API. So instruct Cython
+    to generate a better C code, by giving it advices, using cdefs, or
+    variable declaration. It is only at this point, when you actually need
+    to modify your code.</li>
+    <li> Repeat step 3), for numerics stuff, you usually get the same code
+    as I would write by hand. But if you are still not satisfied, write it
+    in C directly, and just call it from Cython.</li>
+</ol>
+
+The crucial observation is (and I don't think it is possible to do the
+same with any other project out there - except Pyrex, which
+Cython builds upon), that you just have a Python program, then do
+the step 2, which is still Python, thus you don't loose anything, but
+you suddenly have your algorithm in (bad) C. And then you just
+iteratively improve the C, up until having a hand written superfast C (if
+needed). So it's a continuous process and you just stop it when the speed is
+enough.
+</p>
+<p>
+Sometimes it is needed to call third-party C, C++ or Fortran libraries from
+Python.  If they are C or C++, they can be easily called from Cython in the step
+3. above.  If they are in Fortran, I use <a href="http://www.scipy.org/F2py">f2py</a>.
+</p>
+<p>
+Working with all those tools is a joy, not a misery, and that's really
+important, I would even say crucial.
+</p>
+
+{% endblock %}
