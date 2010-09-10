@@ -46,6 +46,46 @@ Internships, academic stays
   Department of Cybernetics, Faculty of Electrical Engineering,
   Czech Technical University
 
+Awards
+======
+
+2010
+
+* Excellence in Scholarship Award, by the Math/Stat Department, University of Nevada, Reno
+
+2004
+
+* 4th award at Intel International Science and Engineering Fair, Oregon, USA
+* Honorary sheet from the Minister of Education for the representation
+  of the Czech Republic
+
+2003
+
+* award presented by the Czech Learned Society
+* honorary sheet from the Minister of Education for the representation
+  of the Czech Republic
+* honorary sheet from the Council of the City of Prague for achieved
+  successes in Mathematics Olympiad
+* 3th prize in the International Young Physicists' Tournament, Uppsala,
+  Sweden, 1st place in the Czech Republic
+* 3rd prize in the Austrian Young Physicists' Tournament, Vienna, Austria
+
+2002
+
+* honorary sheet from the Minister of Education for the representation
+  of the Czech Republic
+* honorary sheet from the Council of the City of Prague for achieved
+  successes in Mathematics Olympiad
+* 3rd prize in physics at International Conference of Young Scientists,
+  Kutaisi, Georgia
+* 3rd prize in the International Young Physicists' Tournament, Odessa,
+  Ukraine, 1st place in the Czech Republic
+
+2001
+
+* honorary sheet from the Council of the City of Prague for achieved
+  successes in Mathematics Olympiad
+
 Conferences, summer schools and other meetings
 ==============================================
 
@@ -106,46 +146,6 @@ Conferences, summer schools and other meetings
 2001
 
 * International Conference of Young Scientists, Katowice, Poland
-
-Awards
-======
-
-2010
-
-* Excellence in Scholarship Award, by the Math/Stat Department, University of Nevada, Reno
-
-2004
-
-* 4th award at Intel International Science and Engineering Fair, Oregon, USA
-* Honorary sheet from the Minister of Education for the representation
-  of the Czech Republic
-
-2003
-
-* award presented by the Czech Learned Society
-* honorary sheet from the Minister of Education for the representation
-  of the Czech Republic
-* honorary sheet from the Council of the City of Prague for achieved
-  successes in Mathematics Olympiad
-* 3th prize in the International Young Physicists' Tournament, Uppsala,
-  Sweden, 1st place in the Czech Republic
-* 3rd prize in the Austrian Young Physicists' Tournament, Vienna, Austria
-
-2002
-
-* honorary sheet from the Minister of Education for the representation
-  of the Czech Republic
-* honorary sheet from the Council of the City of Prague for achieved
-  successes in Mathematics Olympiad
-* 3rd prize in physics at International Conference of Young Scientists,
-  Kutaisi, Georgia
-* 3rd prize in the International Young Physicists' Tournament, Odessa,
-  Ukraine, 1st place in the Czech Republic
-
-2001
-
-* honorary sheet from the Council of the City of Prague for achieved
-  successes in Mathematics Olympiad
 
 Other accomplishments in mathematics and physics
 ================================================
