@@ -49,6 +49,10 @@ Internships, academic stays
 Conferences, summer schools and other meetings
 ==============================================
 
+2010
+
+* 2nd European Seminar on Coupled Problems (ESCO 2010), Pilsen, Czech Republic
+
 2009
 
 * SIAM Conference on Computational Science and Engineering (CSE09), Miami, FL, USA
@@ -112,7 +116,7 @@ Awards
 
 2004
 
-* 4th award at Intel International Science and Engineering Fair, OR, USA
+* 4th award at Intel International Science and Engineering Fair, Oregon, USA
 * Honorary sheet from the Minister of Education for the representation
   of the Czech Republic
 
@@ -145,11 +149,6 @@ Awards
 
 Other accomplishments in mathematics and physics
 ================================================
-
-2004
-
-* Intel International Science and Engineering Fair, 4th award, Portland,
-  Oregon, USA
 
 2003
 

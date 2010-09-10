@@ -3,13 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.5: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.6: http://docutils.sourceforge.net/" />
 <title>Resume</title>
 <style type="text/css">
 
 /*
 :Author: David Goodger (goodger@python.org)
-:Id: $Id: html4css1.css 5196 2007-06-03 20:25:28Z wiemann $
+:Id: $Id: html4css1.css 5951 2009-05-18 18:03:10Z milde $
 :Copyright: This stylesheet has been placed in the public domain.
 
 Default cascading style sheet for the HTML output of Docutils.
@@ -157,11 +157,32 @@ h2.subtitle {
 hr.docutils {
   width: 75% }
 
-img.align-left {
-  clear: left }
+img.align-left, .figure.align-left{
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
 
-img.align-right {
-  clear: right }
+img.align-right, .figure.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: left }
+
+/* div.align-center * { */
+/*   text-align: left } */
 
 ol.simple, ul.simple {
   margin-bottom: 1em }
@@ -216,8 +237,7 @@ p.topic-title {
 pre.address {
   margin-bottom: 0 ;
   margin-top: 0 ;
-  font-family: serif ;
-  font-size: 100% }
+  font: inherit }
 
 pre.literal-block, pre.doctest-block {
   margin-left: 2em ;
@@ -333,6 +353,10 @@ Czech Technical University</dd>
 </div>
 <div class="section" id="conferences-summer-schools-and-other-meetings">
 <h3>Conferences, summer schools and other meetings</h3>
+<p>2010</p>
+<ul class="simple">
+<li>2nd European Seminar on Coupled Problems (ESCO 2010), Pilsen, Czech Republic</li>
+</ul>
 <p>2009</p>
 <ul class="simple">
 <li>SIAM Conference on Computational Science and Engineering (CSE09), Miami, FL, USA</li>
@@ -396,7 +420,7 @@ the Czech Republic</li>
 </ul>
 <p>2004</p>
 <ul class="simple">
-<li>4th award at Intel International Science and Engineering Fair, OR, USA</li>
+<li>4th award at Intel International Science and Engineering Fair, Oregon, USA</li>
 <li>Honorary sheet from the Minister of Education for the representation
 of the Czech Republic</li>
 </ul>
@@ -430,11 +454,6 @@ successes in Mathematics Olympiad</li>
 </div>
 <div class="section" id="other-accomplishments-in-mathematics-and-physics">
 <h3>Other accomplishments in mathematics and physics</h3>
-<p>2004</p>
-<ul class="simple">
-<li>Intel International Science and Engineering Fair, 4th award, Portland,
-Oregon, USA</li>
-</ul>
 <p>2003</p>
 <ul class="simple">
 <li>High School Special Activity in Physics, 1st place in the Czech
