@@ -236,6 +236,12 @@ Publications in impacted journals
    J.  Stuchlik, J. Kocka: Relation of nanoscale and macroscopic properties of
    mixed-phase silicon thin films, Phys. Status Solidi A, 1-5 (2010) doi:10.1002/pssa.200982907
 
+#. P. Solin, O. Certik, M. Kuraz: Solving the Nonstationary Richards Equation
+   with Adaptive hp-FEM, Advanced Water Resources, accepted in December 2010
+
+#. P. Solin, O. Certik, L. Korous: Three Anisotropic Benchmarks for Adaptive
+   Finite Element Methods, Appl. Math. Comput., doi:10.1016/j.amc.2010.12.080
+
 Other publications
 ==================
 
