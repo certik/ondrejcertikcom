@@ -49,136 +49,87 @@ Internships, academic stays
 Awards
 ======
 
-2010
-
-* Excellence in Scholarship Award, by the Math/Stat Department, University of Nevada, Reno
-
-2004
-
+* Excellence in Scholarship Award, by the Math/Stat Department, University of
+  Nevada, Reno (2010)
 * 4th award at Intel International Science and Engineering Fair, Oregon, USA
+  (2004)
 * Honorary sheet from the Minister of Education for the representation
-  of the Czech Republic
-
-2003
-
-* award presented by the Czech Learned Society
+  of the Czech Republic (2004)
+* award presented by the Czech Learned Society (2003)
 * honorary sheet from the Minister of Education for the representation
-  of the Czech Republic
+  of the Czech Republic (2003)
 * honorary sheet from the Council of the City of Prague for achieved
-  successes in Mathematics Olympiad
+  successes in Mathematics Olympiad (2003)
 * 3th prize in the International Young Physicists' Tournament, Uppsala,
-  Sweden, 1st place in the Czech Republic
-* 3rd prize in the Austrian Young Physicists' Tournament, Vienna, Austria
-
-2002
-
+  Sweden, 1st place in the Czech Republic (2003)
+* 3rd prize in the Austrian Young Physicists' Tournament, Vienna, Austria (2003)
 * honorary sheet from the Minister of Education for the representation
-  of the Czech Republic
+  of the Czech Republic (2002)
 * honorary sheet from the Council of the City of Prague for achieved
-  successes in Mathematics Olympiad
+  successes in Mathematics Olympiad (2002)
 * 3rd prize in physics at International Conference of Young Scientists,
-  Kutaisi, Georgia
+  Kutaisi, Georgia (2002)
 * 3rd prize in the International Young Physicists' Tournament, Odessa,
-  Ukraine, 1st place in the Czech Republic
-
-2001
-
+  Ukraine, 1st place in the Czech Republic (2002)
 * honorary sheet from the Council of the City of Prague for achieved
-  successes in Mathematics Olympiad
+  successes in Mathematics Olympiad (2001)
 
 Conferences, summer schools and other meetings
 ==============================================
 
-2010
-
-* 2nd European Seminar on Coupled Problems (ESCO 2010), Pilsen, Czech Republic
-
-2009
-
-* SIAM Conference on Computational Science and Engineering (CSE09), Miami, FL, USA
-* Finite Element Methods in Engineering and Science (FEMTEC 2009), Granlibakken  Conference Center, Lake Tahoe, CA, USA
-* SciPy 2009 Conference, Caltech, Pasadena, CA, USA
-
-2008
-
-* 5th International Workshop on Parallel Matrix Algorithms and Applications (PMAA'08), Neuchâtel, Switzerland
-* Google Mentor Summit, Mountain View, CA, USA
-* SAGE Days 8, Austin, Texas, USA
-* EuroSciPy 2008 Conference, Leipzig, Germany
-* International Summer School on Physics at Nanoscale, Devet Skal, the Czech Republic
-
-2007
-
-* 8th Workshop on the DOE Advanced Computational Software (ACTS) Collection Workshop, Lawrence Berkeley National Laboratory, Berkeley, CA, USA
-* SciPy 2007 Conference, Caltech, Pasadena, CA, USA
-* Workshop and Advanced School on Eigenvalue Problems, Software and Applications (EPSA2007), Porto, Portugal
-* SAGE Days 6, Bristol, UK
-* Debian QA and release teams work session, Merida, Spain
-
-2006
-
-* Comsol Users Conference 2006, Prague, the Czech Republic
-
-2005
-
-* Launch Conference of the International Year of physics, UNESCO, Paris, France
-* Summer School of Physics, Tri Studne, the Czech Republic
-
-2004
-
-* Intel International Science and Engineering Fair, Oregon, USA
+* 2nd European Seminar on Coupled Problems (ESCO 2010), Pilsen, Czech Republic (2010)
+* SIAM Conference on Computational Science and Engineering (CSE09), Miami, FL, USA (2009)
+* Finite Element Methods in Engineering and Science (FEMTEC 2009), Granlibakken  Conference Center, Lake Tahoe, CA, USA (2009)
+* SciPy 2009 Conference, Caltech, Pasadena, CA, USA (2009)
+* 5th International Workshop on Parallel Matrix Algorithms and Applications (PMAA'08), Neuchâtel, Switzerland (2008)
+* Google Mentor Summit, Mountain View, CA, USA (2008)
+* SAGE Days 8, Austin, Texas, USA (2008)
+* EuroSciPy 2008 Conference, Leipzig, Germany (2008)
+* International Summer School on Physics at Nanoscale, Devet Skal, the Czech Republic (2008)
+* 8th Workshop on the DOE Advanced Computational Software (ACTS) Collection Workshop, Lawrence Berkeley National Laboratory, Berkeley, CA, USA (2007)
+* SciPy 2007 Conference, Caltech, Pasadena, CA, USA (2007)
+* Workshop and Advanced School on Eigenvalue Problems, Software and Applications (EPSA2007), Porto, Portugal (2007)
+* SAGE Days 6, Bristol, UK (2007)
+* Debian QA and release teams work session, Merida, Spain (2007)
+* Comsol Users Conference 2006, Prague, the Czech Republic (2006)
+* Launch Conference of the International Year of physics, UNESCO, Paris, France (2005)
+* Summer School of Physics, Tri Studne, the Czech Republic (2005)
+* Intel International Science and Engineering Fair, Oregon, USA (2004)
 * international conference 25 years of High School Special Activity, Brno,
-  the Czech Republic
+  the Czech Republic (2004)
 * international conference Pedagogical Software, Ceske Budejovice,
-  the Czech Republic
-
-2003
-
-* International Conference of Young Scientists, Kladno, the Czech Republic
-
-2002
-
-* Summer School of Physics, Tri Studne, the Czech Republic
-* International Conference of Young Scientists, Kutaisi, Georgia
+  the Czech Republic (2004)
+* International Conference of Young Scientists, Kladno, the Czech Republic (2003)
+* Summer School of Physics, Tri Studne, the Czech Republic (2002)
+* International Conference of Young Scientists, Kutaisi, Georgia (2002)
 * international conference Pedagogical Software, Ceske Budejovice,
-  the Czech Republic
-
-2001
-
-* International Conference of Young Scientists, Katowice, Poland
+  the Czech Republic (2002)
+* International Conference of Young Scientists, Katowice, Poland (2001)
 
 Other accomplishments in mathematics and physics
 ================================================
 
-2003
-
 * High School Special Activity in Physics, 1st place in the Czech
   Republic, nominated to International Science and
-  Engineering Fair in Oregon, USA, in May 2004
+  Engineering Fair in Oregon, USA, in May 2004 (2003)
 * captain of the Czech representation team in International Young
   Physicists' Tournament, 1st place in the Czech Republic, 3rd prize in
-  Uppsala, Sweden
+  Uppsala, Sweden (2003)
 * representing the Czech Republic in First Step to Nobel Prize in
-  Physics, Poland, won Honorable mention in category Research Papers
+  Physics, Poland, won Honorable mention in category Research Papers (2003)
 * 2nd-3rd place in Prague round of Mathematics Olympiad (8th-10th in the
-  Czech Republic)
-* Czech national round in Physics Olympiad
-* Czech national round in Mathematics Olympiad
-* 3rd-4th place in Prague round of Physics Olympiad
-
-2002
-
+  Czech Republic) (2003)
+* Czech national round in Physics Olympiad (2003)
+* Czech national round in Mathematics Olympiad (2003)
+* 3rd-4th place in Prague round of Physics Olympiad (2003)
 * 1st place at international mathematical competition Bratislavsky naboj,
-  Bratislava, Slovakia
-* 8th-9th place in the Czech national round of Mathematics Olympiad
-* 3rd place in Prague round of Mathematics Olympiad
-* 4th place in Prague round of High School Special Activity in Physics
-
-2001
-
-* Czech national round of Mathematics Olympiad
-* 2nd place in Prague round of Mathematics Olympiad
-* 4th place in Prague round of High School Special Activity, in Physics
+  Bratislava, Slovakia (2002)
+* 8th-9th place in the Czech national round of Mathematics Olympiad (2002)
+* 3rd place in Prague round of Mathematics Olympiad (2002)
+* 4th place in Prague round of High School Special Activity in Physics (2002)
+* Czech national round of Mathematics Olympiad (2001)
+* 2nd place in Prague round of Mathematics Olympiad (2001)
+* 4th place in Prague round of High School Special Activity, in Physics (2001)
 
 Sports
 ======
