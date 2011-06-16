@@ -6,7 +6,7 @@ Resume
 
 :Born: 1983
 
-:Email: ondrej@certik.cz
+:Email: ondrej.certik@gmail.com
 
 Education
 =========
@@ -149,15 +149,7 @@ Languages
 
 English - fluent
 
-* living in Reno, Nevada, USA since Dec. 2008
-* university internship, Baltimore, Maryland, USA (2 months, 2006)
-* university internship, Portland, Oregon, USA (2 months, 2005)
-* shop assistant, Dublin, Ireland (2 months, 2004)
-* summer course, Great Britain (1 month, 2001)
-
 Czech - native
-
-German - very little
 
 Publications in impacted journals
 =================================

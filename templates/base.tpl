@@ -38,7 +38,7 @@ some physics, his texts, linux and especially debian information." />
     </ul>
   </div><div id="outro">
   <hr /> 
-  <p id="last_change">Powered by <a href="http://jinja.pocoo.org/2/">Jinja</a><span> | </span>ondrej@certik.cz</p></div>
+  <p id="last_change">Powered by <a href="http://jinja.pocoo.org/2/">Jinja</a> and <a href="http://github.com">GitHub</a><span> | </span><a href="https://github.com/certik/ondrejcertikcom">Source</a></p></div>
 </div> 
 <script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
 </script>
