@@ -28,6 +28,9 @@ since 2009
 Internships, academic stays
 ===========================
 
+2011
+  6 months internship at the Lawrence Livermore National Laboratory, Livermore, California, USA
+
 2010
   Computational Chemistry and Materials Science Summer Institute at the Lawrence Livermore National Laboratory, Livermore, California, USA
 
