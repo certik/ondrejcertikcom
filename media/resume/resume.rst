@@ -11,7 +11,7 @@ Resume
 Education
 =========
 
-since 2009
+2009 to present
   studying PhD in Chemical Physics at the University of Nevada, Reno, USA
 
 2006-2008
@@ -29,23 +29,23 @@ Internships, academic stays
 ===========================
 
 2011
-  6 months internship at the Lawrence Livermore National Laboratory, Livermore, California, USA
+  Six-month internship at the Lawrence Livermore National Laboratory, Livermore, California, USA
 
 2010
   Computational Chemistry and Materials Science Summer Institute at the Lawrence Livermore National Laboratory, Livermore, California, USA
 
 2009
-  summer internship at the Los Alamos National Laboratory, Los Alamos, New Mexico, USA
+  Summer internship at the Los Alamos National Laboratory, Los Alamos, New Mexico, USA
 
 2006
-  summer internship at the Space Telescope Science Institute, Baltimore, Maryland,
+  Summer internship at the Space Telescope Science Institute, Baltimore, Maryland,
   USA
 
 2005
-  summer internship at Portland State University, Oregon, USA
+  Summer internship at Portland State University, Oregon, USA
 
 1999-2002
-  scientific assistant at Center for Machine Perception (CMP),
+  Scientific assistant at Center for Machine Perception (CMP),
   Department of Cybernetics, Faculty of Electrical Engineering,
   Czech Technical University
 
@@ -80,6 +80,8 @@ Awards
 Conferences, summer schools and other meetings
 ==============================================
 
+* Google Mentor Summit, Mountain View, CA, USA (2011)
+* APS California-Nevada Section 2011 Annual Meeting, SLAC, Menlo Park, CA, USA (2011)
 * 2nd European Seminar on Coupled Problems (ESCO 2010), Pilsen, Czech Republic (2010)
 * SIAM Conference on Computational Science and Engineering (CSE09), Miami, FL, USA (2009)
 * Finite Element Methods in Engineering and Science (FEMTEC 2009), Granlibakken  Conference Center, Lake Tahoe, CA, USA (2009)
