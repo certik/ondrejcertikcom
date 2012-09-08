@@ -11,8 +11,8 @@ Resume
 Education
 =========
 
-2009 to present
-  studying PhD in Chemical Physics at the University of Nevada, Reno, USA
+2009-2012
+  PhD in Chemical Physics at the University of Nevada, Reno, USA
 
 2006-2008
   Master degree in Theoretical Physics at Faculty of Mathematics and Physics,
@@ -217,3 +217,10 @@ Other publications
    Numerical Methods, Proc. of the 8th Python in Science Conference (SciPy
    2009), Pasadena, Aug.  2009
    (http://hpfem.org/publications/papers/2009/scipy09_paper-39.pdf).
+
+#. J. Vackář, O. Čertík, R. Cimrman, Ma. Novák, O. Šipr, J. Plešek
+   Finite Element Method in Density Functional Theory Electronic Structure
+   Calculations, Chapter 12 in Advances in the Theory of Quantum Systems in
+   Chemistry and Physics, eds. P.E.Hoggan, E.J.Brändas, J.Maruani, P.Piecuch,
+   G.Delgado-Barrio, in series: Progress in Theoretical Chemistry and Physics,
+   Vol. 22, Springer 2011, pp.199-217, ISBN 978-94-007-2075-6
