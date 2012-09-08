@@ -187,6 +187,13 @@ Publications in impacted journals
 #. P. Solin, O. Certik, L. Korous: Three Anisotropic Benchmarks for Adaptive
    Finite Element Methods, Appl. Math. Comput., doi:10.1016/j.amc.2010.12.080
 
+#. O. Čertík, J. Vackář, John E. Pask: dftatom: A robust and general
+   Schrödinger and Dirac solver for atomic structure calculations, submitted to
+   Computer Physics Communications (August 28, 2012)
+
+#. O. Čertík, P. Winkler: Hartree-Fock Slater Type Orbitals Results For
+   Screened Debye Interaction, in preparation
+
 Other publications
 ==================
 
