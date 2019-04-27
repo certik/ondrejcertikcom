@@ -1,1 +1,0 @@
-rst2html.py --initial-header-level=3 resume.rst > ../resume.html
