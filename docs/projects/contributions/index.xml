@@ -53,5 +53,14 @@ The goals are:
  All calculations are very explicit, with no intermediate steps left out. Start from the most general (and correct) physical theories (general relativity or standard model) and derive the specialized equations from them (e.g. the Schrödinger equation).</description>
     </item>
     
+    <item>
+      <title>Fortran 90 Webpage</title>
+      <link>https://www.ondrejcertik.com/projects/contributions/fortran90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ondrejcertik.com/projects/contributions/fortran90/</guid>
+      <description>Fortran 90 is a website which lists recommended practices for modern Fortran. It also has a section about side by side comparison with Python and an FAQ about Fortran.</description>
+    </item>
+    
   </channel>
 </rss>

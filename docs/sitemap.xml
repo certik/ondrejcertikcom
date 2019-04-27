@@ -28,9 +28,19 @@
   </url>
   
   <url>
+    <loc>https://www.ondrejcertik.com/projects/contributions/fortran90/</loc>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>https://www.ondrejcertik.com/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
     <priority>1</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ondrejcertik.com/tags/best-practices/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -90,6 +100,11 @@
   
   <url>
     <loc>https://www.ondrejcertik.com/tags/reference/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.ondrejcertik.com/tags/rosetta-stone/</loc>
     <priority>0</priority>
   </url>
   
