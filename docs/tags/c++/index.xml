@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Ondřej Čertík</title>
+    <link>https://www.ondrejcertik.com/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Ondřej Čertík</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.ondrejcertik.com/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SymEngine</title>
+      <link>https://www.ondrejcertik.com/projects/contributions/symengine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ondrejcertik.com/projects/contributions/symengine/</guid>
+      <description>SymEngine is a fast symbolic manipulation library, written in C++.
+Ondřej started the project in 2012, and since then developed a user and developer community. According to many benchmarks, SymEngine is one of the fastest computer algebra systems (whether open source or commercial).
+SymEngine is written in pure C++, but has wrappers to many languages (Python, Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.</description>
+    </item>
+    
+  </channel>
+</rss>

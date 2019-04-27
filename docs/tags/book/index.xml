@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Book on Ondřej Čertík</title>
+    <link>https://www.ondrejcertik.com/tags/book/</link>
+    <description>Recent content in Book on Ondřej Čertík</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://www.ondrejcertik.com/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Theoretical Physics Reference</title>
+      <link>https://www.ondrejcertik.com/projects/contributions/tfr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.ondrejcertik.com/projects/contributions/tfr/</guid>
+      <description>The Theoretical Physics Reference is an attempt to derive all theoretical physics equations (that are ever needed for applications) from the general and special relativity and the standard model of particle physics.
+The goals are:
+ All calculations are very explicit, with no intermediate steps left out. Start from the most general (and correct) physical theories (general relativity or standard model) and derive the specialized equations from them (e.g. the Schrödinger equation).</description>
+    </item>
+    
+  </channel>
+</rss>
