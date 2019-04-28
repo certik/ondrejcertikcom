@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computer Algebra System on Ondřej Čertík</title>
-    <link>https://www.ondrejcertik.com/tags/computer-algebra-system/</link>
+    <link>https://ondrejcertik.com/tags/computer-algebra-system/</link>
     <description>Recent content in Computer Algebra System on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.ondrejcertik.com/tags/computer-algebra-system/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ondrejcertik.com/tags/computer-algebra-system/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SymPy</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/sympy/</link>
+      <link>https://ondrejcertik.com/projects/contributions/sympy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/sympy/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/sympy/</guid>
       <description>SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
 Ondřej started the project in 2005, and since then developed a large user and developer community. He handed over the leadership to Aaron Meurer in 2011.
 SymPy has participated in every Google Summer of Code since 2007 and Ondřej has been either a mentor or an organization admin (together with Aaron Meurer).</description>
@@ -23,10 +23,10 @@ SymPy has participated in every Google Summer of Code since 2007 and Ondřej has
     
     <item>
       <title>SymEngine</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/symengine/</link>
+      <link>https://ondrejcertik.com/projects/contributions/symengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/symengine/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/symengine/</guid>
       <description>SymEngine is a fast symbolic manipulation library, written in C++.
 Ondřej started the project in 2012, and since then developed a user and developer community. According to many benchmarks, SymEngine is one of the fastest computer algebra systems (whether open source or commercial).
 SymEngine is written in pure C++, but has wrappers to many languages (Python, Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.</description>

@@ -2,137 +2,137 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Ondřej Čertík</title>
-    <link>https://www.ondrejcertik.com/tags/</link>
+    <link>https://ondrejcertik.com/tags/</link>
     <description>Recent content in Tags on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.ondrejcertik.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ondrejcertik.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Best Practices</title>
-      <link>https://www.ondrejcertik.com/tags/best-practices/</link>
+      <link>https://ondrejcertik.com/tags/best-practices/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/best-practices/</guid>
+      <guid>https://ondrejcertik.com/tags/best-practices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Book</title>
-      <link>https://www.ondrejcertik.com/tags/book/</link>
+      <link>https://ondrejcertik.com/tags/book/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/book/</guid>
+      <guid>https://ondrejcertik.com/tags/book/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C&#43;&#43;</title>
-      <link>https://www.ondrejcertik.com/tags/c&#43;&#43;/</link>
+      <link>https://ondrejcertik.com/tags/c&#43;&#43;/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/c&#43;&#43;/</guid>
+      <guid>https://ondrejcertik.com/tags/c&#43;&#43;/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Compilers</title>
-      <link>https://www.ondrejcertik.com/tags/compilers/</link>
+      <link>https://ondrejcertik.com/tags/compilers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/compilers/</guid>
+      <guid>https://ondrejcertik.com/tags/compilers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Computer Algebra System</title>
-      <link>https://www.ondrejcertik.com/tags/computer-algebra-system/</link>
+      <link>https://ondrejcertik.com/tags/computer-algebra-system/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/computer-algebra-system/</guid>
+      <guid>https://ondrejcertik.com/tags/computer-algebra-system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Fortran</title>
-      <link>https://www.ondrejcertik.com/tags/fortran/</link>
+      <link>https://ondrejcertik.com/tags/fortran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/fortran/</guid>
+      <guid>https://ondrejcertik.com/tags/fortran/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Interactive</title>
-      <link>https://www.ondrejcertik.com/tags/interactive/</link>
+      <link>https://ondrejcertik.com/tags/interactive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/interactive/</guid>
+      <guid>https://ondrejcertik.com/tags/interactive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jupyter</title>
-      <link>https://www.ondrejcertik.com/tags/jupyter/</link>
+      <link>https://ondrejcertik.com/tags/jupyter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/jupyter/</guid>
+      <guid>https://ondrejcertik.com/tags/jupyter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Performance</title>
-      <link>https://www.ondrejcertik.com/tags/performance/</link>
+      <link>https://ondrejcertik.com/tags/performance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/performance/</guid>
+      <guid>https://ondrejcertik.com/tags/performance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>https://www.ondrejcertik.com/tags/python/</link>
+      <link>https://ondrejcertik.com/tags/python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/python/</guid>
+      <guid>https://ondrejcertik.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reference</title>
-      <link>https://www.ondrejcertik.com/tags/reference/</link>
+      <link>https://ondrejcertik.com/tags/reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/reference/</guid>
+      <guid>https://ondrejcertik.com/tags/reference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rosetta Stone</title>
-      <link>https://www.ondrejcertik.com/tags/rosetta-stone/</link>
+      <link>https://ondrejcertik.com/tags/rosetta-stone/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/rosetta-stone/</guid>
+      <guid>https://ondrejcertik.com/tags/rosetta-stone/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Symbolic Manipulation</title>
-      <link>https://www.ondrejcertik.com/tags/symbolic-manipulation/</link>
+      <link>https://ondrejcertik.com/tags/symbolic-manipulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/symbolic-manipulation/</guid>
+      <guid>https://ondrejcertik.com/tags/symbolic-manipulation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Theoretical Physics</title>
-      <link>https://www.ondrejcertik.com/tags/theoretical-physics/</link>
+      <link>https://ondrejcertik.com/tags/theoretical-physics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/tags/theoretical-physics/</guid>
+      <guid>https://ondrejcertik.com/tags/theoretical-physics/</guid>
       <description></description>
     </item>
     

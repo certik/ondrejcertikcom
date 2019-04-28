@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Performance on Ondřej Čertík</title>
-    <link>https://www.ondrejcertik.com/tags/performance/</link>
+    <link>https://ondrejcertik.com/tags/performance/</link>
     <description>Recent content in Performance on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.ondrejcertik.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ondrejcertik.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SymEngine</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/symengine/</link>
+      <link>https://ondrejcertik.com/projects/contributions/symengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/symengine/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/symengine/</guid>
       <description>SymEngine is a fast symbolic manipulation library, written in C++.
 Ondřej started the project in 2012, and since then developed a user and developer community. According to many benchmarks, SymEngine is one of the fastest computer algebra systems (whether open source or commercial).
 SymEngine is written in pure C++, but has wrappers to many languages (Python, Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.</description>
@@ -23,10 +23,10 @@ SymEngine is written in pure C++, but has wrappers to many languages (Python, Ju
     
     <item>
       <title>LFortran</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/lfortran/</link>
+      <link>https://ondrejcertik.com/projects/contributions/lfortran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/lfortran/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/lfortran/</guid>
       <description>LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user&amp;rsquo;s code on modern architectures such as multi-core CPUs and GPUs.
 Ondřej started the project in 2017, and is working towards getting first users and developers. He plans to make it a successful open source projects just like SymPy or SymEngine.</description>
     </item>

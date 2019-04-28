@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Ondřej Čertík</title>
-    <link>https://www.ondrejcertik.com/tags/python/</link>
+    <link>https://ondrejcertik.com/tags/python/</link>
     <description>Recent content in Python on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://www.ondrejcertik.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ondrejcertik.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SymPy</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/sympy/</link>
+      <link>https://ondrejcertik.com/projects/contributions/sympy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/sympy/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/sympy/</guid>
       <description>SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
 Ondřej started the project in 2005, and since then developed a large user and developer community. He handed over the leadership to Aaron Meurer in 2011.
 SymPy has participated in every Google Summer of Code since 2007 and Ondřej has been either a mentor or an organization admin (together with Aaron Meurer).</description>
@@ -23,10 +23,10 @@ SymPy has participated in every Google Summer of Code since 2007 and Ondřej has
     
     <item>
       <title>Fortran 90 Webpage</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/fortran90/</link>
+      <link>https://ondrejcertik.com/projects/contributions/fortran90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/fortran90/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/fortran90/</guid>
       <description>Fortran 90 is a website which lists recommended practices for modern Fortran. It also has a section about side by side comparison with Python and an FAQ about Fortran.</description>
     </item>
     

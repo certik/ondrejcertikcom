@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ondřej Čertík&#39;s Webpage on Ondřej Čertík</title>
-    <link>https://www.ondrejcertik.com/</link>
+    <link>https://ondrejcertik.com/</link>
     <description>Recent content in Ondřej Čertík&#39;s Webpage on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.ondrejcertik.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ondrejcertik.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SymPy</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/sympy/</link>
+      <link>https://ondrejcertik.com/projects/contributions/sympy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/sympy/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/sympy/</guid>
       <description>SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
 Ondřej started the project in 2005, and since then developed a large user and developer community. He handed over the leadership to Aaron Meurer in 2011.
 SymPy has participated in every Google Summer of Code since 2007 and Ondřej has been either a mentor or an organization admin (together with Aaron Meurer).</description>
@@ -24,10 +24,10 @@ SymPy has participated in every Google Summer of Code since 2007 and Ondřej has
     
     <item>
       <title>SymEngine</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/symengine/</link>
+      <link>https://ondrejcertik.com/projects/contributions/symengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/symengine/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/symengine/</guid>
       <description>SymEngine is a fast symbolic manipulation library, written in C++.
 Ondřej started the project in 2012, and since then developed a user and developer community. According to many benchmarks, SymEngine is one of the fastest computer algebra systems (whether open source or commercial).
 SymEngine is written in pure C++, but has wrappers to many languages (Python, Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.</description>
@@ -35,20 +35,20 @@ SymEngine is written in pure C++, but has wrappers to many languages (Python, Ju
     
     <item>
       <title>LFortran</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/lfortran/</link>
+      <link>https://ondrejcertik.com/projects/contributions/lfortran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/lfortran/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/lfortran/</guid>
       <description>LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user&amp;rsquo;s code on modern architectures such as multi-core CPUs and GPUs.
 Ondřej started the project in 2017, and is working towards getting first users and developers. He plans to make it a successful open source projects just like SymPy or SymEngine.</description>
     </item>
     
     <item>
       <title>Theoretical Physics Reference</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/tfr/</link>
+      <link>https://ondrejcertik.com/projects/contributions/tfr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/tfr/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/tfr/</guid>
       <description>The Theoretical Physics Reference is an attempt to derive all theoretical physics equations (that are ever needed for applications) from the general and special relativity and the standard model of particle physics.
 The goals are:
  All calculations are very explicit, with no intermediate steps left out. Start from the most general (and correct) physical theories (general relativity or standard model) and derive the specialized equations from them (e.g. the Schrödinger equation).</description>
@@ -56,19 +56,19 @@ The goals are:
     
     <item>
       <title>Fortran 90 Webpage</title>
-      <link>https://www.ondrejcertik.com/projects/contributions/fortran90/</link>
+      <link>https://ondrejcertik.com/projects/contributions/fortran90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/projects/contributions/fortran90/</guid>
+      <guid>https://ondrejcertik.com/projects/contributions/fortran90/</guid>
       <description>Fortran 90 is a website which lists recommended practices for modern Fortran. It also has a section about side by side comparison with Python and an FAQ about Fortran.</description>
     </item>
     
     <item>
       <title>Search Results</title>
-      <link>https://www.ondrejcertik.com/search/</link>
+      <link>https://ondrejcertik.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.ondrejcertik.com/search/</guid>
+      <guid>https://ondrejcertik.com/search/</guid>
       <description>This file exists solely to respond to /search URL with the related search layout template.
 No content shown here is rendered, all content is based in the template layouts/page/search.html
 Setting a very low sitemap priority will tell search engines this is not important content.
