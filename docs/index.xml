@@ -64,6 +64,16 @@ The goals are:
     </item>
     
     <item>
+      <title>Enabling Blog At My Webpage</title>
+      <link>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</guid>
+      <description>My webpage is generated using Hugo and it uses the hugo-resume template.
+I just enabled a blog section here, so that I can post blog posts here from now on. My old blog is still hosted at https://ondrejcertik.blogspot.com/, but I do not update it anymore.</description>
+    </item>
+    
+    <item>
       <title>Search Results</title>
       <link>https://ondrejcertik.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

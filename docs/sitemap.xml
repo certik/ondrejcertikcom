@@ -33,6 +33,31 @@
   </url>
   
   <url>
+    <loc>https://ondrejcertik.com/tags/blog/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/blog/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/hugo/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/</loc>
+    <lastmod>2020-04-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ondrejcertik.com/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
     <priority>1</priority>
@@ -102,10 +127,6 @@
   
   <url>
     <loc>https://ondrejcertik.com/tags/symbolic-manipulation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ondrejcertik.com/tags/</loc>
   </url>
   
   <url>

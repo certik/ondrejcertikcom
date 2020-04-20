@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Ondřej Čertík</title>
+    <link>https://ondrejcertik.com/blog/</link>
+    <description>Recent content in Blogs on Ondřej Čertík</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ondrejcertik.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Enabling Blog At My Webpage</title>
+      <link>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</guid>
+      <description>My webpage is generated using Hugo and it uses the hugo-resume template.
+I just enabled a blog section here, so that I can post blog posts here from now on. My old blog is still hosted at https://ondrejcertik.blogspot.com/, but I do not update it anymore.</description>
+    </item>
+    
+  </channel>
+</rss>
