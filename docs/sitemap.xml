@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -40,52 +40,42 @@
   
   <url>
     <loc>https://ondrejcertik.com/tags/best-practices/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/book/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/c&#43;&#43;/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/compilers/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/computer-algebra-system/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/fortran/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/interactive/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/jupyter/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/performance/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -95,17 +85,14 @@
   
   <url>
     <loc>https://ondrejcertik.com/tags/python/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/reference/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/rosetta-stone/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -115,17 +102,14 @@
   
   <url>
     <loc>https://ondrejcertik.com/tags/symbolic-manipulation/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/theoretical-physics/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
