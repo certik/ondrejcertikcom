@@ -6,6 +6,7 @@
     <description>Recent content in Fortran on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ondrejcertik.com/tags/fortran/index.xml" rel="self" type="application/rss+xml" />
     
@@ -27,6 +28,15 @@ Ondřej started the project in 2017, and is working towards getting first users 
       
       <guid>https://ondrejcertik.com/projects/contributions/fortran90/</guid>
       <description> Fortran 90 is a website which lists recommended practices for modern Fortran. It also has a section about side by side comparison with Python and an FAQ about Fortran. </description>
+    </item>
+    
+    <item>
+      <title>Running for WG5 Convenor Announcement</title>
+      <link>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</guid>
+      <description>I decided to run for WG5 Convenor (International Fortran Committee Chair). I have written up a Platform document that explains why I am running, the issues as I see them, and how I propose to work with the Committee to address them (see also my CV). I have developed this platform with many Fortran community members, both inside and outside of the Fortran Committee. Furthermore, I have also posted the platform as a GitHub repository and I encourage anyone to open issues and Pull Requests (PRs) to discuss and further refine the platform.</description>
     </item>
     
   </channel>
