@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ondrejcertik.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Resurrecting Fortran</title>
+      <link>https://ondrejcertik.com/blog/2021/03/resurrecting-fortran/</link>
+      <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/blog/2021/03/resurrecting-fortran/</guid>
+      <description>We have finished the first chapter on a long journey of resurrecting Fortran: forming an initial core community of developers and users with enough momentum around the new Fortran website and projects at fortran-lang.org. There is still have a long way to go to, but this was a necessary (although not sufficient) achievement and I feel this was a once in a life time event. The timing was right, we were ready, and we also got lucky.</description>
+    </item>
     
     <item>
       <title>Running for WG5 Convenor Announcement</title>

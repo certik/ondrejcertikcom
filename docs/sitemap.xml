@@ -34,7 +34,22 @@
   
   <url>
     <loc>https://ondrejcertik.com/blog/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/fortran/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/blog/2021/03/resurrecting-fortran/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/</loc>
+    <lastmod>2021-03-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,17 +58,7 @@
   </url>
   
   <url>
-    <loc>https://ondrejcertik.com/tags/fortran/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ondrejcertik.com/tags/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
   

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Resurrecting Fortran</title>
+  <meta property="og:title" content="Resurrecting Fortran" />
+  <meta property="og:image" content="https://ondrejcertik.com/img/photo.jpeg" />
+  <meta name="description" content="Scientist at Los Alamos National Laboratory">
+  <meta property="og:description" content="Scientist at Los Alamos National Laboratory" />
+  <meta name="author" content="Ondřej Čertík">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://ondrejcertik.com/css/resume.css" rel="stylesheet">
+  <link href="https://ondrejcertik.com/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.69.0" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Ondřej Čertík</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/photo.jpeg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://ondrejcertik.com/">Ondřej Čertík&#39;s Webpage</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://ondrejcertik.com/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://ondrejcertik.com/blog/2021/03/resurrecting-fortran/">Resurrecting Fortran</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">Resurrecting Fortran</span></h2>
+    <span class="text-primary">March 12, 2021</span>
+    <p>We have finished the first chapter on a long journey of resurrecting Fortran:
+forming an initial core community of developers and users with enough momentum
+around the new Fortran website and projects at
+<a href="https://fortran-lang.org">fortran-lang.org</a>.
+There is still have a long way to go to,
+but this was a necessary (although not sufficient)
+achievement and I feel this was a once in a life time event.  The timing
+was right, we were ready, and we also got lucky. In this blog post I have
+tried to write up the details about the pivotal moments from my perspective. I
+have asked Milan Curcic who has been a co-founder of this effort to do the
+same (please see his
+<a href="https://medium.com/modern-fortran/first-year-of-fortran-lang-d8796bfa0067">blog post</a>), more on that below. Brad Richardson has also written about his perspective.</p>
+<p>This has been the most unusual experience for me, nothing like what I anticipated, but two years ago things seemed to fall into place and set up just right.  I had to give
+it everything I had in order to give it a proper chance. I took the bull by the horns.</p>
+<p>This blog post is long, but you might find it useful to get ideas how to form
+other such communities.</p>
+<h2 id="background">Background</h2>
+<p>I have been using Fortran on and off for a long time, but only started using it
+as my main language around 2010 thanks to <a href="https://people.llnl.gov/pask1">John
+Pask</a>, my advisor at LLNL at a time, who
+introduced me to modern Fortran and I saw that it was a superior choice for
+high performance numerical code than Python -  my main
+choice until that time.
+I immediately realized there is not much information about modern Fortran
+online, so I started the <a href="https://www.fortran90.org">fortran90.org</a> website in
+2012 to collect information about the recommended modern ways to use Fortran
+with the hope that it could become the website for Fortran. Over the years it
+received contributions from about 11 people and it is moderately popular, but
+overall it failed to create a well agreed upon website and a community for
+Fortran.
+<a href="https://github.com/certik/fortran-utils/">fortran-utils</a>, was another idea, which got 5
+contributors and 142 stars at GitHub over the years. Not bad, but no way close
+to creating a thriving community. I thought perhaps there just wasn&rsquo;t  enough
+interest in Fortran, just a few enthusiasts here and there, not enough
+to build a community.</p>
+<h2 id="lfortran">LFortran</h2>
+<p>Fast forward to late 2017. I got a thought: how could Fortran be
+interactive as Python? I thought a lot of the issues with Fortran could be fixed
+with a better, interactive compiler. I got to work.  This eventually became
+<a href="https://lfortran.org">LFortran</a>, but for the time, I worked on it privately.</p>
+<p>After a year of work, I decided to join the <a href="https://j3-fortran.org/">Fortran Standards
+Committee</a>, which I didn&rsquo;t know much about at the time.
+I knew it existed, and I wanted to know if it is still active, and if we can
+join forces somehow. The first meeting I was able to attend was in February 2019. I showed LFortran
+to the committee and there was a lot of interest. That prompted me to get it to a
+point where it could be announced publicly.  This event occurred in April 2019 (which was exciting for me), you can read the
+announcement <a href="https://lfortran.org/blog/2019/04/why-we-created-lfortran/">blog
+post</a>. It generated
+tremendous interest (over 3000 people read it in the first few days). It became
+obvious that people wanted to hear more about why we thought Fortran was a
+great choice. We
+explained that in a follow up <a href="https://lfortran.org/blog/2019/05/why-to-use-fortran-for-new-projects/">blog
+post</a>.</p>
+<p>This interest in Fortran and LFortran was unusual. The response to LFortran lead me to believe I was creating something useful. Almost anybody I talked to, even if they were not fans of Fortran
+initially, were interested after hearing about the project.  I showed individuals how LFortran works, and how it is
+interactive and works in a <a href="https://jupyter.org/">Jupyter notebook</a> just like
+Python or Julia.  I could feel that opinions about Fortran are slowly changing. I
+was hoping that we could build a community around LFortran to resurrect Fortran.
+I have communicated with dozens and dozens of people, online and offline,
+publicly and privately. But so far people were still waiting, keeping an eye on
+LFortran, but not ready to join the effort yet.</p>
+<h2 id="incubator-repository">Incubator Repository</h2>
+<p>My next Fortran Standards Committee meeting was in October 2019. <a href="https://github.com/zjibben">Zach Jibben</a> joined me as another
+representative for <a href="https://www.lanl.gov/">LANL</a>. The meeting started on Monday.
+On Tuesday night I was in my hotel room looking from a window at Las Vegas at
+night, and I got the idea that we should track the committee proposals. First I
+thought to just open issues at LFortran&rsquo;s GitLab repository. I called Zach and asked
+his opinion on the idea. We decided to dedicate a repository to it, so I created a
+<code>fortran_proposals</code> repository at LFortran&rsquo;s GitHub organization (I chose GitHub
+to get more participation, as it has more users than GitLab). We started adding
+issues for ideas that would be worth discussing to include in Fortran.</p>
+<p>In order to draw more attention to the idea, I posted to <a href="https://twitter.com/OndrejCertik/status/1184209195769286656">ask on
+Twitter</a>  &ldquo;I am
+at the committee meeting, if anyone has any wishes that I am happy to represent it&rdquo;. There were several excellent suggestions, such as the very first one from
+<a href="https://twitter.com/Michael_Zingale/status/1184214578168827904">Michael
+Zingale</a> that
+eventually became the first issue
+<a href="https://github.com/j3-fortran/fortran_proposals/issues/1">#1</a>. It was at this
+time that Milan got more involved.</p>
+<p>The next
+day at the committee meeting, my main job was to sell the idea to the other committee
+members, so they could embrace the repository. <a href="https://www.linkedin.com/in/gary-klimowicz-679530/">Gary
+Klimowicz</a> has been
+tremendously helpful convicing others. The first thing he said we needed
+was to move it to its own organization, so we moved it to
+<a href="https://github.com/j3-fortran/fortran_proposals">https://github.com/j3-fortran/fortran_proposals</a>.
+With Gary&rsquo;s help we have convinced several members of the U.S. Standards
+Committee to participate. The first week was critical, here are all the people
+that contributed to issues:</p>
+<p><img src="/img/blog-contrib1.png" alt=""></p>
+<p>After two weeks the most active 12 people:</p>
+<p><img src="/img/blog-contrib2.png" alt=""></p>
+<p>And by the end of February 2020 the most active 12 people:</p>
+<p><img src="/img/blog-contrib3.png" alt=""></p>
+<p>This succession of stats show how the community was growing in the initial
+stages.</p>
+<p>I have spent tremendous effort in this timeframe to nurture this interest and to
+get people involved. I replied to every new contributor, and directed the
+discussion to be the most productive. I haven&rsquo;t done much work on LFortran in
+this timeframe, but I felt this was the opportunity to build an active online
+Fortran community so I gave it my best.</p>
+<h2 id="stdlib">Stdlib</h2>
+<p>Milan <a href="https://github.com/j3-fortran/fortran_proposals/issues/104">suggested</a> to
+start <a href="https://github.com/fortran-lang/stdlib/">stdlib</a> on November 28, 2019. We got a
+<a href="https://github.com/j3-fortran/fortran_proposals/issues/104#issuecomment-563013190">&ldquo;blessing&rdquo;</a>
+for this effort from
+<a href="https://stevelionel.com/">Steve Lionel</a>.
+I
+<a href="https://github.com/j3-fortran/fortran_proposals/issues/104#issuecomment-563840654">asked</a>
+Milan if he would be interested in leading this effort, he
+<a href="https://github.com/j3-fortran/fortran_proposals/issues/104#issuecomment-564065483">accepted</a>. Things were moving fast!</p>
+<p>Milan organized the community around <code>stdlib</code>. We started a GitHub organization
+<code>fortran-lang</code>. I spent a lot of effort providing initial code and discussions
+in <code>stdlib</code> also. Here are the first 12 contributors in the first month and a
+half:</p>
+<p><img src="/img/blog-contrib4.png" alt=""></p>
+<p>My approach with these large initial contributions is to provide enough initial
+momentum so that the snowball eventually starts rolling on its own, whether or
+not I contribute.
+And we succeeded, for example in October
+and November 2020 my own contributions are negligible and others have
+contributed an order of magnitude more (the first 12 people):</p>
+<p><img src="/img/blog-contrib5.png" alt=""></p>
+<p>It works!</p>
+<h2 id="fortran-package-manager">Fortran Package Manager</h2>
+<p>As soon as we started developing LFortran, it became obvious that we will need
+a package ecosystem, so I created an
+<a href="https://gitlab.com/lfortran/lfortran/-/issues/109">issue</a> for it on May 22,
+2019 with what I believe the goals should be. On October 27, 2019 when we had
+our J3 Incubator Repository, I created an
+<a href="https://github.com/j3-fortran/fortran_proposals/issues/55">issue</a> there with
+the same goals. There it generated a lot more discussion. On December 23, 2019
+<a href="https://github.com/gronki">Dominik Gronkiewicz</a> opened a new
+<a href="https://github.com/fortran-lang/stdlib/issues/44">issue</a> at <code>stdlib</code> to try to
+create an experimental packaging ecosystem. It got even more interest. More
+crucially, Milan
+<a href="https://github.com/fortran-lang/stdlib/issues/44#issuecomment-570935274">wrote</a>
+&ldquo;I&rsquo;m in&rdquo;, which was enough momentum that we created a new
+<a href="https://github.com/fortran-lang/fpm">repository</a> for the
+Fortran Package Manager (fpm).</p>
+<p>I initially created a prototype in Rust, but I got stuck on a weird
+<a href="https://github.com/fortran-lang/fpm/issues/16">issue</a> on macOS where a CI test
+would randomly fail. I spent dozens and dozens of hours on that, asked at the
+<a href="https://users.rust-lang.org/t/github-actions-randomly-kill-a-test-program/37255/3">Rust
+Discourse</a>,
+the Rust community has been very helpful. Eventually we figured out a
+workaround, but it took a lot of time and effort. I did not have to spend the
+time on this, but I am the kind of guy who expects things to work robustly on
+all platforms at all times and I cannot sleep well knowing that a Pull Request
+CI tests can randomly fail at any time. As a consequence of this, we did not
+get very far. But it confirmed my suspicion that Cargo is the best package
+manager I know of, the state-of-the-art. And that we want to implement something
+similar for Fortran.</p>
+<p>January 2020 turned into February and there was a Standards Committee Meeting.
+One of the highlights for me was that Brad Richardson agreed to join us to lead
+the <code>fpm</code> effort. He already had a prototype in Haskell, so we made a gentleman&rsquo;s
+agreement that we will switch over to his code to finish the prototype, and
+then we will re-evaluate.</p>
+<p>Milan&rsquo;s and Brad&rsquo;s posts have more details what happened next.</p>
+<p>By now, I consider <code>fpm</code> the most successful and exciting project that came out
+of our Fortran-lang efforts so far. The production version is written in
+Fortran, it can build itself, and there is a growing ecosystem of packages. It
+is modeled by Cargo, the Rust package manager. We have a solid foundation to
+build upon in the coming years.</p>
+<h2 id="fortran-website">Fortran Website</h2>
+<p>On Jan 17 2020 I <a href="https://github.com/fortran-lang/stdlib/issues/110">suggested</a>
+to create a website for Fortran. We got it up and running in April 2020 at
+<a href="https://fortran-lang.org">fortran-lang.org</a>, a domain that Milan has bought
+some time ago, waiting for the right time to use it.
+By October 25, the webpage
+<a href="https://twitter.com/OndrejCertik/status/1320422140542210048">was</a>
+second in all search engines, except Google where
+it was 9th. By December 2, it
+<a href="https://twitter.com/OndrejCertik/status/1334391038450941953">was</a>
+4th in Google:
+Wikipedia now <a href="https://twitter.com/fortranlang/status/1321106716696739841">uses</a>
+our webpage as the Fortran page and our logo. I really like the logo, it was
+Jacob Williams&rsquo;s and Milan&rsquo;s idea, see Milan&rsquo;s blog post for more details.</p>
+<p>We have achieved something incredible: in less than a year we managed to get the
+Fortran website to top of all major search engines.</p>
+<h2 id="fortran-standards-committee">Fortran Standards Committee</h2>
+<p>In April 2020 I
+<a href="/blog/2020/04/running-for-wg5-convenor-announcement/">announced</a> a run for WG5
+Convenor (International Fortran Committee Chair), you can read my platform and
+motivation in the announcement post. I did not get the position,
+<a href="https://stevelionel.com/">Steve Lionel</a>
+was selected as the chair. Later I ran for a J3 chair position, also did not get
+it, <a href="https://www.nersc.gov/about/nersc-staff/application-performance/brian-friesen/">Brian
+Friesen</a>
+was selected for it. I maintain excellent, professional relationships with both, as
+well as the rest of the committee. The committee as well as Steve and Brian all
+want to see Fortran improve. I wish them luck and I&rsquo;ve helped them and
+the committee, as my time and energy allows.</p>
+<p>As a highlight of the February 2021 meeting, we got Milan to officially join
+the committee also, thanks to Gary Klimowicz.</p>
+<h2 id="fortrancon-2020">FortranCon 2020</h2>
+<p>Another lucky coincidence was that <a href="https://twitter.com/tizianomueller">Tiziano Mueller</a> and team organized the
+very first <a href="https://tcevents.chem.uzh.ch/event/12/">FortranCon 2020</a>. We helped
+<a href="https://fortran-lang.org/newsletter/2020/04/06/Announcing-FortranCon-2020/">announce</a> at fortran-lang.org also.</p>
+<p>The organizers have done a great job. The conference attracted a very
+enthusiastic group of people. It reminded me the early SciPy conferences. The
+community was small, and everybody understood we had to help each other.
+FortranCon felt just like that. Even though it was remote only, the atmosphere
+was excellent. A lot of good discussions happened.</p>
+<h2 id="community">Community</h2>
+<p>There have been many people instrumental to the success of the above efforts.
+You can find their names when you browse the community statistics at the bottom
+of: <a href="https://fortran-lang.org/community/">https://fortran-lang.org/community/</a>.</p>
+<p>The first and foremost that I want to thank to is Milan. I believe my first
+text message to Milan was on January 5 2020, setting up time to brainstorm
+<code>fpm</code>. We have exchanged hundreds of messages since then and dozens of phone
+calls. If it was not for him, the efforts above such as <code>stdlib</code>, <code>fpm</code>,
+<code>website</code>, etc. would simply not happen. He took the initiative to lead many of
+these efforts and provided me with the motivation to continue. He had many
+excellent, complementary ideas, such as starting <code>stdlib</code>, the Fortran monthly
+calls, having a Discourse in addition to a mailinglist (the Discourse proved a
+lot more popular), having a dedicated Twitter
+<a href="https://twitter.com/fortranlang">account</a> for Fortran, and many other. The
+contributor statistics I showed above are based on comments only, so they do
+not tell the full story.</p>
+<p>I want to thank Jeremie Vandenplas, Brad Richardson, Laurence Kedward, Peter
+Klausler, Gary Klimowicz, Ivan Pribec, urbanjost, FortranFan, Zaak Beekman,
+Sebastian Ehlert, William Clodius, Arjen Markus, Bálint Aradi, Steve Lionel,
+Jacob Williams, Dominik Gronkiewicz, Michael Hirsch, Marshall Ward, Chris
+MacMackin, septcolor, Neil Carlson and the rest of over 100 people who have
+contributed. It has been a pleasure to work with you all on reviving
+Fortran.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>We have finished the first chapter on our long journy of resurrecting Fortran.
+If I stop contributing today, I don&rsquo;t believe these efforts will die. From this perspective
+I have succeeded. As documented above, it was highly non-trivial and a
+tremendous amount of work to bootstrap this initial Fortran community just to
+get to this point.</p>
+<p>We still have a long way to go, but the focus of our work has shifted. Now our
+job is to grow and leverage the community to make fast enough progress on the
+core efforts such as <code>fpm</code>, <code>stdlib</code> and other tooling. We have the platform,
+infrastructure and the community to do it.</p>
+<p>I personally want to focus more on LFortran to make it succeed. Things look
+very promising, just in the last month we got 4 people contributing code to the
+compiler. I feel it is the last missing piece of the puzzle. Together with the
+new Flang, GFortran, commercial Fortran compilers
+(<a href="https://fortran-lang.org/compilers/">https://fortran-lang.org/compilers/</a>) and collaboration with the standards
+committee I believe we will eventually succeed in making Fortran a viable
+language for high performance numerical computing going forward.</p>
+
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/fortran">Fortran</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138775950-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138775950-1');
+  </script>
+  
+
+  
+</body>
+</html>
