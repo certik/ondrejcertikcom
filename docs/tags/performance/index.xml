@@ -6,6 +6,7 @@
     <description>Recent content in Performance on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ondrejcertik.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +30,19 @@ SymEngine is written in pure C++, but has wrappers to many languages (Python, Ju
       <guid>https://ondrejcertik.com/projects/contributions/lfortran/</guid>
       <description>LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user&amp;rsquo;s code on modern architectures such as multi-core CPUs and GPUs.
 Ondřej started the project in 2017, and is working towards getting first users and developers. He plans to make it a successful open source projects just like SymPy or SymEngine.</description>
+    </item>
+    
+    <item>
+      <title>fastGPT: Faster than PyTorch in 300 lines of Fortran</title>
+      <link>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</guid>
+      <description>Authors: Ondřej Čertík, Brian Beckman
+In this blog post I am announcing fastGPT, fast GPT-2 inference written in Fortran. In it, I show
+  Fortran has speed at least as good as default PyTorch on Apple M1 Max.
+  Fortran code has statically typed arrays, making maintenance of the code easier than with Python
+  It seems that the bottleneck algorithm in GPT-2 inference is matrix-matrix multiplication. For physicists like us, matrix-matrix multiplication is very familiar, unlike other aspects of AI and ML.</description>
     </item>
     
   </channel>

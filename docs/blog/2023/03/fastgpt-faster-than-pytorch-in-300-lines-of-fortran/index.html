@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>fastGPT: Faster than PyTorch in 300 lines of Fortran</title>
+  <meta property="og:title" content="fastGPT: Faster than PyTorch in 300 lines of Fortran" />
+  <meta property="og:image" content="https://ondrejcertik.com/img/photo.jpeg" />
+  <meta name="description" content="Scientist at Los Alamos National Laboratory">
+  <meta property="og:description" content="Scientist at Los Alamos National Laboratory" />
+  <meta name="author" content="Ondřej Čertík">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  
+  <link href="https://ondrejcertik.com/css/resume.css" rel="stylesheet">
+  <link href="https://ondrejcertik.com/css/tweaks.css" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.69.0" />
+  
+   
+  
+</head>
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+  <a class="navbar-brand js-scroll-trigger" href="#page-top">
+    <span class="d-block d-lg-none">Ondřej Čertík</span>
+    <span class="d-none d-lg-block">
+      <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/photo.jpeg" alt="">
+    </span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#about">About</a>
+      </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
+          </li>
+      
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+          </li>
+      
+      
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+          </li>
+      
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid p-0">
+    
+<nav aria-label="breadcrumb">
+  <ol  class="breadcrumb">
+    
+
+
+
+
+
+<li class="breadcrumb-item">
+  <a href="https://ondrejcertik.com/">Ondřej Čertík&#39;s Webpage</a>
+</li>
+
+
+<li class="breadcrumb-item">
+  <a href="https://ondrejcertik.com/blog/">Blogs</a>
+</li>
+
+
+<li class="breadcrumb-item active">
+  <a href="https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/">fastGPT: Faster than PyTorch in 300 lines of Fortran</a>
+</li>
+
+  </ol>
+</nav>
+
+
+
+
+<section class="resume-section p-3 p-lg-5 d-flex d-column">
+  <div class="my-auto">
+    <h2 class="mb-0"><span class="text-primary">fastGPT: Faster than PyTorch in 300 lines of Fortran</span></h2>
+    <span class="text-primary">March 14, 2023</span>
+    <p><em>Authors: <a href="https://ondrejcertik.com/">Ondřej Čertík</a>, <a href="https://github.com/rebcabin/">Brian Beckman</a></em></p>
+<p>In this blog post I am announcing
+<a href="https://github.com/certik/fastGPT/">fastGPT</a>, fast GPT-2 inference written in
+Fortran. In it, I show</p>
+<ol>
+<li>
+<p>Fortran has speed at least as good as default <code>PyTorch</code> on Apple M1 Max.</p>
+</li>
+<li>
+<p>Fortran code has statically typed arrays, making maintenance of the code
+easier than with Python</p>
+</li>
+<li>
+<p>It seems that the bottleneck algorithm in GPT-2 inference is matrix-matrix
+multiplication. For physicists like us, matrix-matrix multiplication is very
+familiar, unlike other aspects of AI and ML. Finding this familiar ground
+inspired us to approach GPT-2 like any other numerical computing problem.</p>
+</li>
+<li>
+<p>Fixed an unintentional single-to-double conversion that slowed down the
+original Python.</p>
+</li>
+<li>
+<p>I am asking others to take over and parallelize <code>fastGPT</code> on CPU and
+offload to GPU and see how fast you can make it.</p>
+</li>
+</ol>
+<p>About one month ago, I read the blogpost <a href="https://jaykmody.com/blog/gpt-from-scratch/">GPT in 60 Lines of
+NumPy</a>, and it piqued my
+curiosity. I looked at the corresponding code
+(<a href="https://github.com/jaymody/picoGPT">picoGPT</a>) and was absolutely amazed, for
+two reasons. First, I hadn&rsquo;t known it could be so simple to implement the GPT-2
+inference. Second, this looks just like a typical computational physics code,
+similar to many that I have developed and maintained throughout my career.</p>
+<p>I immediately downloaded <code>picoGPT</code> to test it out and indeed it worked! It was
+slow, as advertised, but it worked and it gave exactly the same answer as
+<code>PyTorch</code>. Then I studied the source code more and indeed it seemed like a
+clean, full, self-contained implementation of GPT-2.</p>
+<p>The next step is obvious: this is just a numerical array-oriented algorithm, so
+if we want it to look like NumPy, but to be fast like <code>PyTorch</code>, let&rsquo;s rewrite
+in Fortran!</p>
+<p>Following <code>picoGPT</code> as a reference, I straightforwardly rewrote one function at
+a time to Fortran, and checked against <code>picoGPT</code> that my Fortran gives exactly
+the same answer. The job took about two afternoons. Both <code>picoGPT</code> and
+<code>PyTorch</code> (from conda-forge) use OpenBLAS to run in parallel on Apple M1, so I
+linked my Fortran against OpenBLAS also to get fast matrix-matrix multiplies.
+Without any other optimizations, my Fortran gave faster inference than
+<code>PyTorch</code>!</p>
+<p>While writing <code>picoGPT</code> into <code>fastGPT</code>, I noticed that <code>picoGPT</code> accidentally
+casts the computation from single to double precision.  I sent a
+<a href="https://github.com/jaymody/picoGPT/pull/12">PR</a> to <code>picoGPT</code> that fixes that,
+speeding  it up 5x for me. I use the faster version below.</p>
+<p>I also implemented kv-cache, which greatly speeds up token generation beyond
+the first version of <code>fastGPT</code>. Below, &ldquo;no cache&rdquo; means kv-cache is turned off.
+Let&rsquo;s look at the benchmarks on my laptop. On Apple M1 Max we do the GPT-2 124M
+model inference of 19 input tokens and generating 20 more tokens (see the
+<a href="https://github.com/certik/fastGPT/blob/a82ff3930f00081520762f98900df1f689514fca/README.md">README</a>
+for more details). The following two lines are the most fair comparison against
+<code>PyTorch</code>: just the inference itself, excluding all initialization; using the
+same backend (OpenBLAS); using caching (the default in PyTorch); all compiler
+optimizations on, but no special-purpose code in <code>fastGPT</code>. In our opinion we
+give the maximum possible advantage to PyTorch and we are faster on all cores
+(1-8):</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>1 core   </th>
+<th>2 cores   </th>
+<th>4 cores   </th>
+<th>8 cores   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fastGPT (OpenBLAS)   </td>
+<td>0.837s</td>
+<td>0.514s</td>
+<td>0.341s</td>
+<td>0.339s</td>
+</tr>
+<tr>
+<td>PyTorch (OpenBLAS)</td>
+<td>0.873s</td>
+<td>0.539s</td>
+<td>0.386s</td>
+<td>0.392s</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+In the second table we now introduce two improvements: faster implementation of
+the <code>tanh</code> function and using the Accelerate framework on macOS, now the
+results are 3x faster on single core.</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>1 core   </th>
+<th>2 cores   </th>
+<th>4 cores   </th>
+<th>8 cores   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fastGPT (Accelerate, fast_tanh)   </td>
+<td>0.288s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>fastGPT (Accelerate)</td>
+<td>0.299s</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>fastGPT (OpenBLAS)</td>
+<td>0.837s</td>
+<td>0.514s</td>
+<td>0.341s</td>
+<td>0.339s</td>
+</tr>
+<tr>
+<td>PyTorch (OpenBLAS)</td>
+<td>0.873s</td>
+<td>0.539s</td>
+<td>0.386s</td>
+<td>0.392s</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+In the third table we also compare against <code>picoGPT</code>, which does not have
+caching implemented, so we turn off caching in <code>fastGPT</code> and <code>PyTorch</code> and
+again use the same backend (OpenBLAS) and no special optimizations in
+<code>fastGPT</code>, for fair comparison:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>1 core   </th>
+<th>2 cores   </th>
+<th>4 cores   </th>
+<th>8 cores   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fastGPT (OpenBLAS, no cache)</td>
+<td>2.343s</td>
+<td>1.603s</td>
+<td>1.209s</td>
+<td>1.018s</td>
+</tr>
+<tr>
+<td>PyTorch (OpenBLAS, no cache)</td>
+<td>2.356s</td>
+<td>1.520s</td>
+<td>1.104s</td>
+<td>0.997s</td>
+</tr>
+<tr>
+<td>picoGPT (OpenBLAS, no cache)   </td>
+<td>2.427s</td>
+<td>1.645s</td>
+<td>1.272s</td>
+<td>1.081s</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+The above benchmarks only compare the time for the inference itself, excluding
+loading the data (for all codes) and Python import times (for <code>picoGPT</code> and
+<code>PyTorch</code>). With IO optimized for Fortran arrays, the results are truly
+dramatic, up to 12x faster. Total run (includes loading the model and Python
+imports):</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fastGPT (Accelerate, fast_tanh)  </td>
+<td>0.401s</td>
+</tr>
+<tr>
+<td>picoGPT (8 cores)</td>
+<td>3.445s</td>
+</tr>
+<tr>
+<td>PyTorch (OpenBLAS, 4 cores)</td>
+<td>4.867s</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+As you can see, <code>fastGPT</code> is slightly faster than <code>PyTorch</code> when doing as fair
+comparison as we can (both using OpenBLAS as a backend and both using caching,
+the default in <code>PyTorch</code>). You can also see that <code>fastGPT</code> loads the model very
+quickly and runs immediately, while both <code>PyTorch</code> and <code>picoGPT</code> take a long
+time to both load the model and to import all the Python libraries.</p>
+<p>This matches my past experience with Fortran. Every time I rewrite NumPy code
+in Fortran, it looks almost the same, but I get very competitive performance.
+Until now I have not been interested in machine learning / AI, because it
+seemed to me like very large fits to data, plus the results were not even
+very impressive to me, and the algorithms themselves did not seem similar to
+computational physics. But GPT-2, after implementing a Fortran version of it, I
+can say without any doubt that the algorithm is exactly analogous to many
+computational physics codes that I have been working with. Consequently, I
+think exactly the same performance techniques apply here.</p>
+<p>Using a language like Fortran, which is oriented to the fastest possible array
+computations, allows to write code that is the highly performing, but still
+readable, because things get complicated and one must be able to maintain it.
+(The GPT-2 inference algorithm is actually quite simple compared to most
+physics codes.)</p>
+<p>Both maintainability and speed is achieved by array declarations with static
+types, compare the original Python:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mha</span>(x, c_attn, c_proj, n_head):  <span style="color:#75715e"># [n_seq, n_embd] -&gt; [n_seq, n_embd]</span>
+    <span style="color:#f92672">...</span>
+</code></pre></div><p>and Fortran:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fortran" data-lang="fortran"><span style="color:#66d9ef">function </span>mha(n_seq, n_embd, x, attn_w, attn_b, proj_w, proj_b, n_head) <span style="color:#66d9ef">result</span>(y)
+<span style="color:#66d9ef">integer</span>, <span style="color:#66d9ef">intent</span>(in) <span style="color:#66d9ef">::</span> n_seq, n_embd, n_head
+<span style="color:#66d9ef">real</span>(sp), <span style="color:#66d9ef">intent</span>(in) <span style="color:#66d9ef">::</span> x(n_embd,n_seq), &amp;
+    attn_w(<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n_embd,n_embd), attn_b(<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n_embd), &amp;
+    proj_w(n_embd,n_embd), proj_b(n_embd)
+<span style="color:#66d9ef">real</span>(sp) <span style="color:#66d9ef">::</span> y(n_embd,n_seq)
+...
+</code></pre></div><p>In <code>picoGPT</code> one must use comments to keep track of the dimensions, and
+sometimes there are mistakes, which is inevitable. In Fortran the compiler
+itself ensures all the dimensions are correct with compile and runtime checks.
+It is great for both documentation and speed. The Python version actually
+accepts <code>c_attn</code> which is a dictionary of arrays. For performance I do not
+recommend that, so we pass all the underlying arrays directly. Besides these
+declarations, the Fortran code is almost identical to the original NumPy code.</p>
+<p>If you like these results so far, please help us parallelize <code>fastGPT</code> on CPU
+as well as offload to GPU. We have a very good single core CPU performance (but
+we should still try to speed it up further), and it provides a great foundation
+for parallelization. Let&rsquo;s see how fast we can make it!</p>
+
+    
+    <ul class="tags">
+    
+      <li><a class="tag" href="/tags/fortran">Fortran</a></li>
+    
+      <li><a class="tag" href="/tags/gpt">GPT</a></li>
+    
+      <li><a class="tag" href="/tags/performance">Performance</a></li>
+    
+</ul>
+
+  </div>
+</section>
+
+
+    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+    
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  
+  <script src="/js/resume.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138775950-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-138775950-1');
+  </script>
+  
+
+  
+</body>
+</html>

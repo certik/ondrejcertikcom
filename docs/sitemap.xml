@@ -34,16 +34,36 @@
   
   <url>
     <loc>https://ondrejcertik.com/blog/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ondrejcertik.com/tags/compilers/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
+    <loc>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ondrejcertik.com/tags/fortran/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/gpt/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/performance/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/</loc>
+    <lastmod>2023-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ondrejcertik.com/tags/compilers/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -59,11 +79,6 @@
   
   <url>
     <loc>https://ondrejcertik.com/tags/python/</loc>
-    <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ondrejcertik.com/tags/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -134,10 +149,6 @@
   
   <url>
     <loc>https://ondrejcertik.com/tags/jupyter/</loc>
-  </url>
-  
-  <url>
-    <loc>https://ondrejcertik.com/tags/performance/</loc>
   </url>
   
   <url>

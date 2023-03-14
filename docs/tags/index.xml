@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Ondřej Čertík</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ondrejcertik.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fortran</title>
+      <link>https://ondrejcertik.com/tags/fortran/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/tags/fortran/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GPT</title>
+      <link>https://ondrejcertik.com/tags/gpt/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/tags/gpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Performance</title>
+      <link>https://ondrejcertik.com/tags/performance/</link>
+      <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://ondrejcertik.com/tags/performance/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Compilers</title>
@@ -17,15 +44,6 @@
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://ondrejcertik.com/tags/compilers/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fortran</title>
-      <link>https://ondrejcertik.com/tags/fortran/</link>
-      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://ondrejcertik.com/tags/fortran/</guid>
       <description></description>
     </item>
     
@@ -134,15 +152,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ondrejcertik.com/tags/jupyter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Performance</title>
-      <link>https://ondrejcertik.com/tags/performance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ondrejcertik.com/tags/performance/</guid>
       <description></description>
     </item>
     
