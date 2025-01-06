@@ -29,6 +29,13 @@
       <description>&lt;p&gt;LFortran is a modern open-source (BSD licensed) interactive Fortran compiler&#xA;built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow&#xA;exploratory work (much like Python, MATLAB or Julia) as well as compile to&#xA;binaries with the goal to run user&amp;rsquo;s code on modern architectures such as&#xA;multi-core CPUs and GPUs.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2017, and is working towards getting first users&#xA;and developers. He plans to make it a successful open source projects just like&#xA;SymPy or SymEngine.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>LPython</title>
+      <link>https://ondrejcertik.com/projects/contributions/lpython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ondrejcertik.com/projects/contributions/lpython/</guid>
+      <description>&lt;p&gt;LPython aggressively optimizes type-annotated Python code. It has several backends, including LLVM, C, C++, and WASM. LPython’s primary tenet is speed.&lt;/p&gt;&#xA;&lt;p&gt;LPython is in alpha stage (meaning users enthusiastically participate in bug reporting and fixing). LPython will compile more of Python in the future, and accumulate more optimizations, experimental and production-ready. LPython makes it easy to write new back-ends for custom, exotic, or unusual hardware.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Theoretical Physics Reference</title>
       <link>https://ondrejcertik.com/projects/contributions/tfr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

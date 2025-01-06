@@ -14,11 +14,18 @@
     <loc>https://ondrejcertik.com/projects/contributions/lfortran/</loc>
     <priority>0.8</priority>
   </url><url>
+    <loc>https://ondrejcertik.com/projects/contributions/lpython/</loc>
+    <priority>0.8</priority>
+  </url><url>
     <loc>https://ondrejcertik.com/projects/contributions/tfr/</loc>
     <priority>0.8</priority>
   </url><url>
     <loc>https://ondrejcertik.com/projects/contributions/fortran90/</loc>
     <priority>0.8</priority>
+  </url><url>
+    <loc>https://ondrejcertik.com/</loc>
+    <lastmod>2025-01-05T00:00:00+00:00</lastmod>
+    <priority>1</priority>
   </url><url>
     <loc>https://ondrejcertik.com/blog/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
@@ -70,10 +77,6 @@
   </url><url>
     <loc>https://ondrejcertik.com/tags/hugo/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ondrejcertik.com/</loc>
-    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
-    <priority>1</priority>
   </url><url>
     <loc>https://ondrejcertik.com/tags/best-practices/</loc>
   </url><url>

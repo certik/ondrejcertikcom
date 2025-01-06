@@ -16,6 +16,13 @@
       <description>&lt;p&gt;SymPy is a Python library for symbolic mathematics. It aims to become a&#xA;full-featured computer algebra system (CAS) while keeping the code as simple as&#xA;possible in order to be comprehensible and easily extensible.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2005, and since then developed a large user and&#xA;developer community. He handed over the leadership to Aaron Meurer in 2011.&lt;/p&gt;&#xA;&lt;p&gt;SymPy has participated in every Google Summer of Code since 2007 and Ondřej has&#xA;been either a mentor or an organization admin (together with Aaron Meurer). You&#xA;can see &lt;a href=&#34;https://github.com/sympy/sympy/wiki#google-summer-of-code&#34;&gt;here&lt;/a&gt; for&#xA;full details.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>LPython</title>
+      <link>https://ondrejcertik.com/projects/contributions/lpython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ondrejcertik.com/projects/contributions/lpython/</guid>
+      <description>&lt;p&gt;LPython aggressively optimizes type-annotated Python code. It has several backends, including LLVM, C, C++, and WASM. LPython’s primary tenet is speed.&lt;/p&gt;&#xA;&lt;p&gt;LPython is in alpha stage (meaning users enthusiastically participate in bug reporting and fixing). LPython will compile more of Python in the future, and accumulate more optimizations, experimental and production-ready. LPython makes it easy to write new back-ends for custom, exotic, or unusual hardware.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Fortran 90 Webpage</title>
       <link>https://ondrejcertik.com/projects/contributions/fortran90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
