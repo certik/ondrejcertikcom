@@ -4,63 +4,43 @@
     <title>Open Source Projects on Ondřej Čertík</title>
     <link>https://ondrejcertik.com/projects/contributions/</link>
     <description>Recent content in Open Source Projects on Ondřej Čertík</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    
-	<atom:link href="https://ondrejcertik.com/projects/contributions/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://ondrejcertik.com/projects/contributions/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SymPy</title>
       <link>https://ondrejcertik.com/projects/contributions/sympy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/sympy/</guid>
-      <description>SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
-Ondřej started the project in 2005, and since then developed a large user and developer community. He handed over the leadership to Aaron Meurer in 2011.
-SymPy has participated in every Google Summer of Code since 2007 and Ondřej has been either a mentor or an organization admin (together with Aaron Meurer).</description>
+      <description>&lt;p&gt;SymPy is a Python library for symbolic mathematics. It aims to become a&#xA;full-featured computer algebra system (CAS) while keeping the code as simple as&#xA;possible in order to be comprehensible and easily extensible.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2005, and since then developed a large user and&#xA;developer community. He handed over the leadership to Aaron Meurer in 2011.&lt;/p&gt;&#xA;&lt;p&gt;SymPy has participated in every Google Summer of Code since 2007 and Ondřej has&#xA;been either a mentor or an organization admin (together with Aaron Meurer). You&#xA;can see &lt;a href=&#34;https://github.com/sympy/sympy/wiki#google-summer-of-code&#34;&gt;here&lt;/a&gt; for&#xA;full details.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SymEngine</title>
       <link>https://ondrejcertik.com/projects/contributions/symengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/symengine/</guid>
-      <description>SymEngine is a fast symbolic manipulation library, written in C++.
-Ondřej started the project in 2012, and since then developed a user and developer community. According to many benchmarks, SymEngine is one of the fastest computer algebra systems (whether open source or commercial).
-SymEngine is written in pure C++, but has wrappers to many languages (Python, Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.</description>
+      <description>&lt;p&gt;SymEngine is a fast symbolic manipulation library, written in C++.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2012, and since then developed a user and&#xA;developer community. According to many benchmarks, SymEngine is one of the&#xA;fastest computer algebra systems (whether open source or commercial).&lt;/p&gt;&#xA;&lt;p&gt;SymEngine is written in pure C++, but has wrappers to many languages (Python,&#xA;Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LFortran</title>
       <link>https://ondrejcertik.com/projects/contributions/lfortran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/lfortran/</guid>
-      <description>LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user&amp;rsquo;s code on modern architectures such as multi-core CPUs and GPUs.
-Ondřej started the project in 2017, and is working towards getting first users and developers. He plans to make it a successful open source projects just like SymPy or SymEngine.</description>
+      <description>&lt;p&gt;LFortran is a modern open-source (BSD licensed) interactive Fortran compiler&#xA;built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow&#xA;exploratory work (much like Python, MATLAB or Julia) as well as compile to&#xA;binaries with the goal to run user&amp;rsquo;s code on modern architectures such as&#xA;multi-core CPUs and GPUs.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2017, and is working towards getting first users&#xA;and developers. He plans to make it a successful open source projects just like&#xA;SymPy or SymEngine.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Theoretical Physics Reference</title>
       <link>https://ondrejcertik.com/projects/contributions/tfr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/tfr/</guid>
-      <description>The Theoretical Physics Reference is an attempt to derive all theoretical physics equations (that are ever needed for applications) from the general and special relativity and the standard model of particle physics.
-The goals are:
- All calculations are very explicit, with no intermediate steps left out. Start from the most general (and correct) physical theories (general relativity or standard model) and derive the specialized equations from them (e.g. the Schrödinger equation).</description>
+      <description>&lt;p&gt;The Theoretical Physics Reference is an attempt to derive all theoretical physics equations (that are ever needed for applications) from the general and special relativity and the standard model of particle physics.&lt;/p&gt;&#xA;&lt;p&gt;The goals are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;All calculations are very explicit, with no intermediate steps left out.&lt;/li&gt;&#xA;&lt;li&gt;Start from the most general (and correct) physical theories (general relativity or standard model) and derive the specialized equations from them (e.g. the Schrödinger equation).&lt;/li&gt;&#xA;&lt;li&gt;Math is developed in the math section (not in the physics section).&lt;/li&gt;&#xA;&lt;li&gt;Theory should be presented as short and as explicitly as possible. Then there should be arbitrary number of examples, to show how the theory is used.&lt;/li&gt;&#xA;&lt;li&gt;There should be just one notation used throughout the book.&lt;/li&gt;&#xA;&lt;li&gt;It should serve as a reference to any physics equation (exact derivation where it comes from) and the reader should be able to understand how things work from this book, and be ready to understand specialized literature.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This is a work in progress and some chapters don’t conform to the above goals yet. Usually first some derivation is written, as we understood it, then the mathematical tools are extracted and put into the math section, and the rest is fit where it belongs. Sometimes we don’t understand some parts yet, then those are currently left there as they are.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fortran 90 Webpage</title>
       <link>https://ondrejcertik.com/projects/contributions/fortran90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/fortran90/</guid>
-      <description> Fortran 90 is a website which lists recommended practices for modern Fortran. It also has a section about side by side comparison with Python and an FAQ about Fortran. </description>
+      <description>&lt;p&gt;&#xA;Fortran 90 is a website which lists recommended practices for modern Fortran.&#xA;It also has a section about side by side comparison with Python and an FAQ&#xA;about Fortran.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

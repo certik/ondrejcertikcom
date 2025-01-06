@@ -1,180 +1,106 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://ondrejcertik.com/projects/contributions/</loc>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/projects/contributions/sympy/</loc>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/projects/contributions/symengine/</loc>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/projects/contributions/lfortran/</loc>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/projects/contributions/tfr/</loc>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/projects/contributions/fortran90/</loc>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/blog/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/fortran/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/gpt/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/performance/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/</loc>
     <lastmod>2023-03-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/compilers/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/job/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/blog/2022/04/leaving-los-alamos-national-laboratory-and-joining-gsi-technology/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/python/</loc>
     <lastmod>2022-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/blog/2021/03/resurrecting-fortran/</loc>
     <lastmod>2021-03-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/convenor/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/wg5/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/blog/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/hugo/</loc>
     <lastmod>2020-04-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/</loc>
     <lastmod>2019-04-22T00:00:00+00:00</lastmod>
     <priority>1</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/best-practices/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/book/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/c&#43;&#43;/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/categories/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/computer-algebra-system/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/interactive/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/jupyter/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/projects/</loc>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/reference/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/rosetta-stone/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/search/</loc>
     <priority>0.1</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/symbolic-manipulation/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://ondrejcertik.com/tags/theoretical-physics/</loc>
   </url>
-  
 </urlset>

@@ -4,21 +4,15 @@
     <title>Jupyter on Ondřej Čertík</title>
     <link>https://ondrejcertik.com/tags/jupyter/</link>
     <description>Recent content in Jupyter on Ondřej Čertík</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    
-	<atom:link href="https://ondrejcertik.com/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://ondrejcertik.com/tags/jupyter/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LFortran</title>
       <link>https://ondrejcertik.com/projects/contributions/lfortran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/lfortran/</guid>
-      <description>LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user&amp;rsquo;s code on modern architectures such as multi-core CPUs and GPUs.
-Ondřej started the project in 2017, and is working towards getting first users and developers. He plans to make it a successful open source projects just like SymPy or SymEngine.</description>
+      <description>&lt;p&gt;LFortran is a modern open-source (BSD licensed) interactive Fortran compiler&#xA;built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow&#xA;exploratory work (much like Python, MATLAB or Julia) as well as compile to&#xA;binaries with the goal to run user&amp;rsquo;s code on modern architectures such as&#xA;multi-core CPUs and GPUs.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2017, and is working towards getting first users&#xA;and developers. He plans to make it a successful open source projects just like&#xA;SymPy or SymEngine.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

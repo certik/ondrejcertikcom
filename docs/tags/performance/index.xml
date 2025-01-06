@@ -4,46 +4,30 @@
     <title>Performance on Ondřej Čertík</title>
     <link>https://ondrejcertik.com/tags/performance/</link>
     <description>Recent content in Performance on Ondřej Čertík</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ondrejcertik.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://ondrejcertik.com/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SymEngine</title>
       <link>https://ondrejcertik.com/projects/contributions/symengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/symengine/</guid>
-      <description>SymEngine is a fast symbolic manipulation library, written in C++.
-Ondřej started the project in 2012, and since then developed a user and developer community. According to many benchmarks, SymEngine is one of the fastest computer algebra systems (whether open source or commercial).
-SymEngine is written in pure C++, but has wrappers to many languages (Python, Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.</description>
+      <description>&lt;p&gt;SymEngine is a fast symbolic manipulation library, written in C++.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2012, and since then developed a user and&#xA;developer community. According to many benchmarks, SymEngine is one of the&#xA;fastest computer algebra systems (whether open source or commercial).&lt;/p&gt;&#xA;&lt;p&gt;SymEngine is written in pure C++, but has wrappers to many languages (Python,&#xA;Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LFortran</title>
       <link>https://ondrejcertik.com/projects/contributions/lfortran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/lfortran/</guid>
-      <description>LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user&amp;rsquo;s code on modern architectures such as multi-core CPUs and GPUs.
-Ondřej started the project in 2017, and is working towards getting first users and developers. He plans to make it a successful open source projects just like SymPy or SymEngine.</description>
+      <description>&lt;p&gt;LFortran is a modern open-source (BSD licensed) interactive Fortran compiler&#xA;built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow&#xA;exploratory work (much like Python, MATLAB or Julia) as well as compile to&#xA;binaries with the goal to run user&amp;rsquo;s code on modern architectures such as&#xA;multi-core CPUs and GPUs.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2017, and is working towards getting first users&#xA;and developers. He plans to make it a successful open source projects just like&#xA;SymPy or SymEngine.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>fastGPT: Faster than PyTorch in 300 lines of Fortran</title>
       <link>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</guid>
-      <description>Authors: Ondřej Čertík, Brian Beckman
-In this blog post I am announcing fastGPT, fast GPT-2 inference written in Fortran. In it, I show
-  Fortran has speed at least as good as default PyTorch on Apple M1 Max.
-  Fortran code has statically typed arrays, making maintenance of the code easier than with Python
-  It seems that the bottleneck algorithm in GPT-2 inference is matrix-matrix multiplication. For physicists like us, matrix-matrix multiplication is very familiar, unlike other aspects of AI and ML.</description>
+      <description>&lt;p&gt;&lt;em&gt;Authors: &lt;a href=&#34;https://ondrejcertik.com/&#34;&gt;Ondřej Čertík&lt;/a&gt;, &lt;a href=&#34;https://github.com/rebcabin/&#34;&gt;Brian Beckman&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this blog post I am announcing&#xA;&lt;a href=&#34;https://github.com/certik/fastGPT/&#34;&gt;fastGPT&lt;/a&gt;, fast GPT-2 inference written in&#xA;Fortran. In it, I show&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Fortran has speed at least as good as default &lt;code&gt;PyTorch&lt;/code&gt; on Apple M1 Max.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Fortran code has statically typed arrays, making maintenance of the code&#xA;easier than with Python&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It seems that the bottleneck algorithm in GPT-2 inference is matrix-matrix&#xA;multiplication. For physicists like us, matrix-matrix multiplication is very&#xA;familiar, unlike other aspects of AI and ML. Finding this familiar ground&#xA;inspired us to approach GPT-2 like any other numerical computing problem.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

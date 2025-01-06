@@ -4,21 +4,16 @@
     <title>Convenor on Ondřej Čertík</title>
     <link>https://ondrejcertik.com/tags/convenor/</link>
     <description>Recent content in Convenor on Ondřej Čertík</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ondrejcertik.com/tags/convenor/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://ondrejcertik.com/tags/convenor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Running for WG5 Convenor Announcement</title>
       <link>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</guid>
-      <description>I decided to run for WG5 Convenor (International Fortran Committee Chair). I have written up a Platform document that explains why I am running, the issues as I see them, and how I propose to work with the Committee to address them (see also my CV). I have developed this platform with many Fortran community members, both inside and outside of the Fortran Committee. Furthermore, I have also posted the platform as a GitHub repository and I encourage anyone to open issues and Pull Requests (PRs) to discuss and further refine the platform.</description>
+      <description>&lt;p&gt;I decided to run for WG5 Convenor (International Fortran Committee Chair). I&#xA;have written up a &lt;a href=&#34;https://ondrejcertik.com/wg5/platform_and_experience.pdf&#34;&gt;Platform&lt;/a&gt; document that&#xA;explains why I am running, the issues as I see them, and how I propose to work&#xA;with the Committee to address them (see also my&#xA;&lt;a href=&#34;https://ondrejcertik.com/wg5/Certik_Ondrej_CV.pdf&#34;&gt;CV&lt;/a&gt;). I have developed this platform with many&#xA;Fortran community members, both inside and outside of the Fortran Committee.&#xA;Furthermore, I have also posted the platform as a GitHub&#xA;&lt;a href=&#34;https://github.com/certik/wg5_platform_2020&#34;&gt;repository&lt;/a&gt; and I encourage anyone&#xA;to open issues and Pull Requests (PRs) to discuss and further refine the&#xA;platform.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

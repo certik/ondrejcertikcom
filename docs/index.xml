@@ -4,129 +4,86 @@
     <title>Ondřej Čertík&#39;s Webpage on Ondřej Čertík</title>
     <link>https://ondrejcertik.com/</link>
     <description>Recent content in Ondřej Čertík&#39;s Webpage on Ondřej Čertík</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ondrejcertik.com/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 14 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ondrejcertik.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SymPy</title>
       <link>https://ondrejcertik.com/projects/contributions/sympy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/sympy/</guid>
-      <description>SymPy is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS) while keeping the code as simple as possible in order to be comprehensible and easily extensible.
-Ondřej started the project in 2005, and since then developed a large user and developer community. He handed over the leadership to Aaron Meurer in 2011.
-SymPy has participated in every Google Summer of Code since 2007 and Ondřej has been either a mentor or an organization admin (together with Aaron Meurer).</description>
+      <description>&lt;p&gt;SymPy is a Python library for symbolic mathematics. It aims to become a&#xA;full-featured computer algebra system (CAS) while keeping the code as simple as&#xA;possible in order to be comprehensible and easily extensible.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2005, and since then developed a large user and&#xA;developer community. He handed over the leadership to Aaron Meurer in 2011.&lt;/p&gt;&#xA;&lt;p&gt;SymPy has participated in every Google Summer of Code since 2007 and Ondřej has&#xA;been either a mentor or an organization admin (together with Aaron Meurer). You&#xA;can see &lt;a href=&#34;https://github.com/sympy/sympy/wiki#google-summer-of-code&#34;&gt;here&lt;/a&gt; for&#xA;full details.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>SymEngine</title>
       <link>https://ondrejcertik.com/projects/contributions/symengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/symengine/</guid>
-      <description>SymEngine is a fast symbolic manipulation library, written in C++.
-Ondřej started the project in 2012, and since then developed a user and developer community. According to many benchmarks, SymEngine is one of the fastest computer algebra systems (whether open source or commercial).
-SymEngine is written in pure C++, but has wrappers to many languages (Python, Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.</description>
+      <description>&lt;p&gt;SymEngine is a fast symbolic manipulation library, written in C++.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2012, and since then developed a user and&#xA;developer community. According to many benchmarks, SymEngine is one of the&#xA;fastest computer algebra systems (whether open source or commercial).&lt;/p&gt;&#xA;&lt;p&gt;SymEngine is written in pure C++, but has wrappers to many languages (Python,&#xA;Julia, Ruby, &amp;hellip;). It can optionally be used as a backend in SymPy.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>LFortran</title>
       <link>https://ondrejcertik.com/projects/contributions/lfortran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/lfortran/</guid>
-      <description>LFortran is a modern open-source (BSD licensed) interactive Fortran compiler built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow exploratory work (much like Python, MATLAB or Julia) as well as compile to binaries with the goal to run user&amp;rsquo;s code on modern architectures such as multi-core CPUs and GPUs.
-Ondřej started the project in 2017, and is working towards getting first users and developers. He plans to make it a successful open source projects just like SymPy or SymEngine.</description>
+      <description>&lt;p&gt;LFortran is a modern open-source (BSD licensed) interactive Fortran compiler&#xA;built on top of LLVM. It can execute user&amp;rsquo;s code interactively to allow&#xA;exploratory work (much like Python, MATLAB or Julia) as well as compile to&#xA;binaries with the goal to run user&amp;rsquo;s code on modern architectures such as&#xA;multi-core CPUs and GPUs.&lt;/p&gt;&#xA;&lt;p&gt;Ondřej started the project in 2017, and is working towards getting first users&#xA;and developers. He plans to make it a successful open source projects just like&#xA;SymPy or SymEngine.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Theoretical Physics Reference</title>
       <link>https://ondrejcertik.com/projects/contributions/tfr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/tfr/</guid>
-      <description>The Theoretical Physics Reference is an attempt to derive all theoretical physics equations (that are ever needed for applications) from the general and special relativity and the standard model of particle physics.
-The goals are:
- All calculations are very explicit, with no intermediate steps left out. Start from the most general (and correct) physical theories (general relativity or standard model) and derive the specialized equations from them (e.g. the Schrödinger equation).</description>
+      <description>&lt;p&gt;The Theoretical Physics Reference is an attempt to derive all theoretical physics equations (that are ever needed for applications) from the general and special relativity and the standard model of particle physics.&lt;/p&gt;&#xA;&lt;p&gt;The goals are:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;All calculations are very explicit, with no intermediate steps left out.&lt;/li&gt;&#xA;&lt;li&gt;Start from the most general (and correct) physical theories (general relativity or standard model) and derive the specialized equations from them (e.g. the Schrödinger equation).&lt;/li&gt;&#xA;&lt;li&gt;Math is developed in the math section (not in the physics section).&lt;/li&gt;&#xA;&lt;li&gt;Theory should be presented as short and as explicitly as possible. Then there should be arbitrary number of examples, to show how the theory is used.&lt;/li&gt;&#xA;&lt;li&gt;There should be just one notation used throughout the book.&lt;/li&gt;&#xA;&lt;li&gt;It should serve as a reference to any physics equation (exact derivation where it comes from) and the reader should be able to understand how things work from this book, and be ready to understand specialized literature.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;This is a work in progress and some chapters don’t conform to the above goals yet. Usually first some derivation is written, as we understood it, then the mathematical tools are extracted and put into the math section, and the rest is fit where it belongs. Sometimes we don’t understand some parts yet, then those are currently left there as they are.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Fortran 90 Webpage</title>
       <link>https://ondrejcertik.com/projects/contributions/fortran90/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/projects/contributions/fortran90/</guid>
-      <description> Fortran 90 is a website which lists recommended practices for modern Fortran. It also has a section about side by side comparison with Python and an FAQ about Fortran. </description>
+      <description>&lt;p&gt;&#xA;Fortran 90 is a website which lists recommended practices for modern Fortran.&#xA;It also has a section about side by side comparison with Python and an FAQ&#xA;about Fortran.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>fastGPT: Faster than PyTorch in 300 lines of Fortran</title>
       <link>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</link>
       <pubDate>Tue, 14 Mar 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/blog/2023/03/fastgpt-faster-than-pytorch-in-300-lines-of-fortran/</guid>
-      <description>Authors: Ondřej Čertík, Brian Beckman
-In this blog post I am announcing fastGPT, fast GPT-2 inference written in Fortran. In it, I show
-  Fortran has speed at least as good as default PyTorch on Apple M1 Max.
-  Fortran code has statically typed arrays, making maintenance of the code easier than with Python
-  It seems that the bottleneck algorithm in GPT-2 inference is matrix-matrix multiplication. For physicists like us, matrix-matrix multiplication is very familiar, unlike other aspects of AI and ML.</description>
+      <description>&lt;p&gt;&lt;em&gt;Authors: &lt;a href=&#34;https://ondrejcertik.com/&#34;&gt;Ondřej Čertík&lt;/a&gt;, &lt;a href=&#34;https://github.com/rebcabin/&#34;&gt;Brian Beckman&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this blog post I am announcing&#xA;&lt;a href=&#34;https://github.com/certik/fastGPT/&#34;&gt;fastGPT&lt;/a&gt;, fast GPT-2 inference written in&#xA;Fortran. In it, I show&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Fortran has speed at least as good as default &lt;code&gt;PyTorch&lt;/code&gt; on Apple M1 Max.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Fortran code has statically typed arrays, making maintenance of the code&#xA;easier than with Python&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It seems that the bottleneck algorithm in GPT-2 inference is matrix-matrix&#xA;multiplication. For physicists like us, matrix-matrix multiplication is very&#xA;familiar, unlike other aspects of AI and ML. Finding this familiar ground&#xA;inspired us to approach GPT-2 like any other numerical computing problem.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Leaving Los Alamos National Laboratory and joining GSI Technology</title>
       <link>https://ondrejcertik.com/blog/2022/04/leaving-los-alamos-national-laboratory-and-joining-gsi-technology/</link>
       <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/blog/2022/04/leaving-los-alamos-national-laboratory-and-joining-gsi-technology/</guid>
-      <description>In December I left Los Alamos National Laboratory (LANL) to join GSI Technology as a compiler developer.
-I have spent about 8.5 years at LANL. Physics and computing have always been my passions, so I got a Master in theoretical physics in Czechia, and then Ph.D. in chemical physics in the U.S. LANL is a great place for computational physics. I met and worked with many amazing people. It has been intellectually very satisfying to work on the projects that I was able to help with and things to learn.</description>
+      <description>&lt;p&gt;In December I left &lt;a href=&#34;https://www.lanl.gov/&#34;&gt;Los Alamos National Laboratory&lt;/a&gt;&#xA;(LANL) to join &lt;a href=&#34;https://www.gsitechnology.com/&#34;&gt;GSI Technology&lt;/a&gt; as a compiler&#xA;developer.&lt;/p&gt;&#xA;&lt;p&gt;I have spent about 8.5 years at LANL. Physics and computing have always been my&#xA;passions, so I got a Master in theoretical physics in Czechia, and then Ph.D. in&#xA;chemical physics in the U.S. LANL is a great place for computational physics. I&#xA;met and worked with many amazing people. It has been intellectually very&#xA;satisfying to work on the projects that I was able to help with and things to&#xA;learn. LANL has famous beginnings during the &lt;a href=&#34;https://en.wikipedia.org/wiki/Manhattan_Project&#34;&gt;Manhattan&#xA;Project&lt;/a&gt;, and it has&#xA;continuously evolved since then. For somebody who was born behind the Iron&#xA;Curtain, it&amp;rsquo;s been an honor to work there. If you like physics or scientific&#xA;computing, I can only recommend applying there.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Resurrecting Fortran</title>
       <link>https://ondrejcertik.com/blog/2021/03/resurrecting-fortran/</link>
       <pubDate>Fri, 12 Mar 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/blog/2021/03/resurrecting-fortran/</guid>
-      <description>We have finished the first chapter on a long journey of resurrecting Fortran: forming an initial core community of developers and users with enough momentum around the new Fortran website and projects at fortran-lang.org. There is still have a long way to go to, but this was a necessary (although not sufficient) achievement and I feel this was a once in a life time event. The timing was right, we were ready, and we also got lucky.</description>
+      <description>&lt;p&gt;We have finished the first chapter on a long journey of resurrecting Fortran:&#xA;forming an initial core community of developers and users with enough momentum&#xA;around the new Fortran website and projects at&#xA;&lt;a href=&#34;https://fortran-lang.org&#34;&gt;fortran-lang.org&lt;/a&gt;.&#xA;There is still have a long way to go to,&#xA;but this was a necessary (although not sufficient)&#xA;achievement and I feel this was a once in a life time event.  The timing&#xA;was right, we were ready, and we also got lucky. In this blog post I have&#xA;tried to write up the details about the pivotal moments from my perspective. I&#xA;have asked Milan Curcic who has been a co-founder of this effort to do the&#xA;same (please see his&#xA;&lt;a href=&#34;https://medium.com/modern-fortran/first-year-of-fortran-lang-d8796bfa0067&#34;&gt;blog post&lt;/a&gt;), more on that below.&#xA;Brad Richardson has also&#xA;&lt;a href=&#34;https://everythingfunctional.wordpress.com/2021/03/12/the-fortran-package-managers-first-birthday/&#34;&gt;written&lt;/a&gt; about his perspective.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Running for WG5 Convenor Announcement</title>
       <link>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/blog/2020/04/running-for-wg5-convenor-announcement/</guid>
-      <description>I decided to run for WG5 Convenor (International Fortran Committee Chair). I have written up a Platform document that explains why I am running, the issues as I see them, and how I propose to work with the Committee to address them (see also my CV). I have developed this platform with many Fortran community members, both inside and outside of the Fortran Committee. Furthermore, I have also posted the platform as a GitHub repository and I encourage anyone to open issues and Pull Requests (PRs) to discuss and further refine the platform.</description>
+      <description>&lt;p&gt;I decided to run for WG5 Convenor (International Fortran Committee Chair). I&#xA;have written up a &lt;a href=&#34;https://ondrejcertik.com/wg5/platform_and_experience.pdf&#34;&gt;Platform&lt;/a&gt; document that&#xA;explains why I am running, the issues as I see them, and how I propose to work&#xA;with the Committee to address them (see also my&#xA;&lt;a href=&#34;https://ondrejcertik.com/wg5/Certik_Ondrej_CV.pdf&#34;&gt;CV&lt;/a&gt;). I have developed this platform with many&#xA;Fortran community members, both inside and outside of the Fortran Committee.&#xA;Furthermore, I have also posted the platform as a GitHub&#xA;&lt;a href=&#34;https://github.com/certik/wg5_platform_2020&#34;&gt;repository&lt;/a&gt; and I encourage anyone&#xA;to open issues and Pull Requests (PRs) to discuss and further refine the&#xA;platform.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Enabling Blog At My Webpage</title>
       <link>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/blog/2020/04/enabling-blog-at-my-webpage/</guid>
-      <description>My webpage is generated using Hugo and it uses the hugo-resume template.
-I just enabled a blog section here, so that I can post blog posts here from now on. My old blog is still hosted at https://ondrejcertik.blogspot.com/, but I do not update it anymore.</description>
+      <description>&lt;p&gt;My &lt;a href=&#34;https://ondrejcertik.com&#34;&gt;webpage&lt;/a&gt; is generated using&#xA;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; and it uses the&#xA;&lt;a href=&#34;https://github.com/eddiewebb/hugo-resume&#34;&gt;hugo-resume&lt;/a&gt; template.&lt;/p&gt;&#xA;&lt;p&gt;I just enabled a blog section here, so that I can post blog posts here from now&#xA;on. My old blog is still hosted at&#xA;&lt;a href=&#34;https://ondrejcertik.blogspot.com/&#34;&gt;https://ondrejcertik.blogspot.com/&lt;/a&gt;, but I&#xA;do not update it anymore.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Search Results</title>
       <link>https://ondrejcertik.com/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://ondrejcertik.com/search/</guid>
-      <description>This file exists solely to respond to /search URL with the related search layout template.
-No content shown here is rendered, all content is based in the template layouts/page/search.html
-Setting a very low sitemap priority will tell search engines this is not important content.
-This implementation uses Fusejs, jquery and mark.js
-Initial setup Search depends on additional output content type of JSON in config.toml
-[outputs] home = [&amp;quot;HTML&amp;quot;, &amp;quot;JSON&amp;quot;] Searching additional fileds To search additional fields defined in front matter, you must add it in 2 places.</description>
+      <description>&lt;p&gt;This file exists solely to respond to /search URL with the related &lt;code&gt;search&lt;/code&gt; layout template.&lt;/p&gt;&#xA;&lt;p&gt;No content shown here is rendered, all content is based in the template layouts/page/search.html&lt;/p&gt;&#xA;&lt;p&gt;Setting a very low sitemap priority will tell search engines this is not important content.&lt;/p&gt;&#xA;&lt;p&gt;This implementation uses Fusejs, jquery and mark.js&lt;/p&gt;&#xA;&lt;h2 id=&#34;initial-setup&#34;&gt;Initial setup&lt;/h2&gt;&#xA;&lt;p&gt;Search  depends on additional output content type of JSON in config.toml&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[outputs]&#xA;  home = [&amp;#34;HTML&amp;#34;, &amp;#34;JSON&amp;#34;]&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;searching-additional-fileds&#34;&gt;Searching additional fileds&lt;/h2&gt;&#xA;&lt;p&gt;To search additional fields defined in front matter, you must add it in 2 places.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

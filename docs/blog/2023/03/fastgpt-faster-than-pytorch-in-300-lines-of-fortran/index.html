@@ -3,24 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>fastGPT: Faster than PyTorch in 300 lines of Fortran</title>
-  <meta property="og:title" content="fastGPT: Faster than PyTorch in 300 lines of Fortran" />
-  <meta property="og:image" content="https://ondrejcertik.com/img/photo.jpeg" />
-  <meta name="description" content="Scientist at Los Alamos National Laboratory">
-  <meta property="og:description" content="Scientist at Los Alamos National Laboratory" />
+  <title>Ondřej Čertík | fastGPT: Faster than PyTorch in 300 lines of Fortran</title>
+  <meta name="description" content="">
+
+  
+  
+    <meta property="og:image" content="https://ondrejcertik.com/img/photo.jpeg" />
+    <meta property="og:title" content="Ondřej Čertík | fastGPT: Faster than PyTorch in 300 lines of Fortran" />   
+  
+  <meta property="og:description" content="" />
   <meta name="author" content="Ondřej Čertík">
   
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
-  <link href='https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg==" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg==" crossorigin="anonymous"></noscript>
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous"></noscript>
   
-  <link href="https://ondrejcertik.com/css/resume.css" rel="stylesheet">
-  <link href="https://ondrejcertik.com/css/tweaks.css" rel="stylesheet">
-  <meta name="generator" content="Hugo 0.69.0" />
+  <link rel="preload" href="https://ondrejcertik.com/css/resume.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://ondrejcertik.com/css/resume.css"></noscript>
+  <link rel="preload" href="https://ondrejcertik.com/css/tweaks.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://ondrejcertik.com/css/tweaks.css"></noscript>
+  <link rel="preload" href="https://ondrejcertik.com/css/resume-override.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://ondrejcertik.com/css/resume-override.css"></noscript>
+  <meta name="generator" content="Hugo 0.138.0">
   
    
   
@@ -42,32 +53,26 @@
         <a class="nav-link js-scroll-trigger" href="/#about">About</a>
       </li>
       
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#contributions">Open Source</a>
+      </li>
       
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
+      </li>
       
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#open">Open Source</a>
-          </li>
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
+      </li>
       
+      <li class="nav-item">
+        <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
+      </li>
       
-      
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#experience">Experience</a>
-          </li>
-      
-      
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#education">Education</a>
-          </li>
-      
-      
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="/#blog">Blog</a>
-          </li>
       
     </ul>
   </div>
 </nav>
-
   <div class="container-fluid p-0">
     
 <nav aria-label="breadcrumb">
@@ -98,11 +103,14 @@
 
 
 
-<section class="resume-section p-3 p-lg-5 d-flex d-column">
+<section class="resume-section p-3 p-lg-5 d-flex flex-column">
   <div class="my-auto">
-    <h2 class="mb-0"><span class="text-primary">fastGPT: Faster than PyTorch in 300 lines of Fortran</span></h2>
-    <span class="text-primary">March 14, 2023</span>
-    <p><em>Authors: <a href="https://ondrejcertik.com/">Ondřej Čertík</a>, <a href="https://github.com/rebcabin/">Brian Beckman</a></em></p>
+  	<div class="mb-3 d-flex flex-row justify-content-between">
+    	<h2 class="mb-0"><span class="text-primary">fastGPT: Faster than PyTorch in 300 lines of Fortran</span></h2>
+    	<span class="">March 14, 2023</span>
+    </div>
+    <div>
+    	<p><em>Authors: <a href="https://ondrejcertik.com/">Ondřej Čertík</a>, <a href="https://github.com/rebcabin/">Brian Beckman</a></em></p>
 <p>In this blog post I am announcing
 <a href="https://github.com/certik/fastGPT/">fastGPT</a>, fast GPT-2 inference written in
 Fortran. In it, I show</p>
@@ -166,76 +174,76 @@ optimizations on, but no special-purpose code in <code>fastGPT</code>. In our op
 give the maximum possible advantage to PyTorch and we are faster on all cores
 (1-8):</p>
 <table>
-<thead>
-<tr>
-<th>Code</th>
-<th>1 core   </th>
-<th>2 cores   </th>
-<th>4 cores   </th>
-<th>8 cores   </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fastGPT (OpenBLAS)   </td>
-<td>0.837s</td>
-<td>0.514s</td>
-<td>0.341s</td>
-<td>0.339s</td>
-</tr>
-<tr>
-<td>PyTorch (OpenBLAS)</td>
-<td>0.873s</td>
-<td>0.539s</td>
-<td>0.386s</td>
-<td>0.392s</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Code</th>
+          <th>1 core   </th>
+          <th>2 cores   </th>
+          <th>4 cores   </th>
+          <th>8 cores   </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>fastGPT (OpenBLAS)   </td>
+          <td>0.837s</td>
+          <td>0.514s</td>
+          <td>0.341s</td>
+          <td>0.339s</td>
+      </tr>
+      <tr>
+          <td>PyTorch (OpenBLAS)</td>
+          <td>0.873s</td>
+          <td>0.539s</td>
+          <td>0.386s</td>
+          <td>0.392s</td>
+      </tr>
+  </tbody>
 </table>
 <p><br>
 In the second table we now introduce two improvements: faster implementation of
 the <code>tanh</code> function and using the Accelerate framework on macOS, now the
 results are 3x faster on single core.</p>
 <table>
-<thead>
-<tr>
-<th>Code</th>
-<th>1 core   </th>
-<th>2 cores   </th>
-<th>4 cores   </th>
-<th>8 cores   </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fastGPT (Accelerate, fast_tanh)   </td>
-<td>0.288s</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>fastGPT (Accelerate)</td>
-<td>0.299s</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>fastGPT (OpenBLAS)</td>
-<td>0.837s</td>
-<td>0.514s</td>
-<td>0.341s</td>
-<td>0.339s</td>
-</tr>
-<tr>
-<td>PyTorch (OpenBLAS)</td>
-<td>0.873s</td>
-<td>0.539s</td>
-<td>0.386s</td>
-<td>0.392s</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Code</th>
+          <th>1 core   </th>
+          <th>2 cores   </th>
+          <th>4 cores   </th>
+          <th>8 cores   </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>fastGPT (Accelerate, fast_tanh)   </td>
+          <td>0.288s</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>fastGPT (Accelerate)</td>
+          <td>0.299s</td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>fastGPT (OpenBLAS)</td>
+          <td>0.837s</td>
+          <td>0.514s</td>
+          <td>0.341s</td>
+          <td>0.339s</td>
+      </tr>
+      <tr>
+          <td>PyTorch (OpenBLAS)</td>
+          <td>0.873s</td>
+          <td>0.539s</td>
+          <td>0.386s</td>
+          <td>0.392s</td>
+      </tr>
+  </tbody>
 </table>
 <p><br>
 In the third table we also compare against <code>picoGPT</code>, which does not have
@@ -243,38 +251,38 @@ caching implemented, so we turn off caching in <code>fastGPT</code> and <code>Py
 again use the same backend (OpenBLAS) and no special optimizations in
 <code>fastGPT</code>, for fair comparison:</p>
 <table>
-<thead>
-<tr>
-<th>Code</th>
-<th>1 core   </th>
-<th>2 cores   </th>
-<th>4 cores   </th>
-<th>8 cores   </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fastGPT (OpenBLAS, no cache)</td>
-<td>2.343s</td>
-<td>1.603s</td>
-<td>1.209s</td>
-<td>1.018s</td>
-</tr>
-<tr>
-<td>PyTorch (OpenBLAS, no cache)</td>
-<td>2.356s</td>
-<td>1.520s</td>
-<td>1.104s</td>
-<td>0.997s</td>
-</tr>
-<tr>
-<td>picoGPT (OpenBLAS, no cache)   </td>
-<td>2.427s</td>
-<td>1.645s</td>
-<td>1.272s</td>
-<td>1.081s</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Code</th>
+          <th>1 core   </th>
+          <th>2 cores   </th>
+          <th>4 cores   </th>
+          <th>8 cores   </th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>fastGPT (OpenBLAS, no cache)</td>
+          <td>2.343s</td>
+          <td>1.603s</td>
+          <td>1.209s</td>
+          <td>1.018s</td>
+      </tr>
+      <tr>
+          <td>PyTorch (OpenBLAS, no cache)</td>
+          <td>2.356s</td>
+          <td>1.520s</td>
+          <td>1.104s</td>
+          <td>0.997s</td>
+      </tr>
+      <tr>
+          <td>picoGPT (OpenBLAS, no cache)   </td>
+          <td>2.427s</td>
+          <td>1.645s</td>
+          <td>1.272s</td>
+          <td>1.081s</td>
+      </tr>
+  </tbody>
 </table>
 <p><br>
 The above benchmarks only compare the time for the inference itself, excluding
@@ -283,26 +291,26 @@ loading the data (for all codes) and Python import times (for <code>picoGPT</cod
 dramatic, up to 12x faster. Total run (includes loading the model and Python
 imports):</p>
 <table>
-<thead>
-<tr>
-<th>Code</th>
-<th>Time</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fastGPT (Accelerate, fast_tanh)  </td>
-<td>0.401s</td>
-</tr>
-<tr>
-<td>picoGPT (8 cores)</td>
-<td>3.445s</td>
-</tr>
-<tr>
-<td>PyTorch (OpenBLAS, 4 cores)</td>
-<td>4.867s</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Code</th>
+          <th>Time</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>fastGPT (Accelerate, fast_tanh)  </td>
+          <td>0.401s</td>
+      </tr>
+      <tr>
+          <td>picoGPT (8 cores)</td>
+          <td>3.445s</td>
+      </tr>
+      <tr>
+          <td>PyTorch (OpenBLAS, 4 cores)</td>
+          <td>4.867s</td>
+      </tr>
+  </tbody>
 </table>
 <p><br>
 As you can see, <code>fastGPT</code> is slightly faster than <code>PyTorch</code> when doing as fair
@@ -326,17 +334,17 @@ readable, because things get complicated and one must be able to maintain it.
 physics codes.)</p>
 <p>Both maintainability and speed is achieved by array declarations with static
 types, compare the original Python:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mha</span>(x, c_attn, c_proj, n_head):  <span style="color:#75715e"># [n_seq, n_embd] -&gt; [n_seq, n_embd]</span>
-    <span style="color:#f92672">...</span>
-</code></pre></div><p>and Fortran:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fortran" data-lang="fortran"><span style="color:#66d9ef">function </span>mha(n_seq, n_embd, x, attn_w, attn_b, proj_w, proj_b, n_head) <span style="color:#66d9ef">result</span>(y)
-<span style="color:#66d9ef">integer</span>, <span style="color:#66d9ef">intent</span>(in) <span style="color:#66d9ef">::</span> n_seq, n_embd, n_head
-<span style="color:#66d9ef">real</span>(sp), <span style="color:#66d9ef">intent</span>(in) <span style="color:#66d9ef">::</span> x(n_embd,n_seq), &amp;
-    attn_w(<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n_embd,n_embd), attn_b(<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n_embd), &amp;
-    proj_w(n_embd,n_embd), proj_b(n_embd)
-<span style="color:#66d9ef">real</span>(sp) <span style="color:#66d9ef">::</span> y(n_embd,n_seq)
-...
-</code></pre></div><p>In <code>picoGPT</code> one must use comments to keep track of the dimensions, and
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mha</span>(x, c_attn, c_proj, n_head):  <span style="color:#75715e"># [n_seq, n_embd] -&gt; [n_seq, n_embd]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>and Fortran:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fortran" data-lang="fortran"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> mha(n_seq, n_embd, x, attn_w, attn_b, proj_w, proj_b, n_head) <span style="color:#66d9ef">result</span>(y)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">integer</span>, <span style="color:#66d9ef">intent</span>(in) <span style="color:#66d9ef">::</span> n_seq, n_embd, n_head
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">real</span>(sp), <span style="color:#66d9ef">intent</span>(in) <span style="color:#66d9ef">::</span> x(n_embd,n_seq), &amp;
+</span></span><span style="display:flex;"><span>    attn_w(<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n_embd,n_embd), attn_b(<span style="color:#ae81ff">3</span><span style="color:#f92672">*</span>n_embd), &amp;
+</span></span><span style="display:flex;"><span>    proj_w(n_embd,n_embd), proj_b(n_embd)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">real</span>(sp) <span style="color:#66d9ef">::</span> y(n_embd,n_seq)
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><p>In <code>picoGPT</code> one must use comments to keep track of the dimensions, and
 sometimes there are mistakes, which is inevitable. In Fortran the compiler
 itself ensures all the dimensions are correct with compile and runtime checks.
 It is great for both documentation and speed. The Python version actually
@@ -354,40 +362,41 @@ for parallelization. Let&rsquo;s see how fast we can make it!</p>
 <li>Hacker News: <a href="https://news.ycombinator.com/item?id=35159961">https://news.ycombinator.com/item?id=35159961</a></li>
 </ul>
 
-    
+	    
+	</div>
+    <div>
+    	
+    </div>
     <ul class="tags">
-    
-      <li><a class="tag" href="/tags/fortran">Fortran</a></li>
-    
-      <li><a class="tag" href="/tags/gpt">GPT</a></li>
-    
-      <li><a class="tag" href="/tags/performance">Performance</a></li>
     
 </ul>
 
   </div>
 </section>
 
-
-    <span style="color: #999999; font-size: 60%;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
-    
+    <section><span style="color: #999999;">Nifty <a href="https://codepen.io/wbeeftink/pen/dIaDH">tech tag lists</a> from <a class="pen-owner-link" href="https://codepen.io/wbeeftink">Wouter Beeftink</a> </span>
+      
+    </section>
   </div>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js" integrity="sha384-EYn4rWu1DHvYD0sSSSbMEtXQmMl58CFJd897806+RT1jJVYbhuZlZMN6yG9nCyFa" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/smoothscroll-anchor-polyfill@1.3.2/dist/index.min.js" integrity="sha384-EY9NBEHCFbZANmPcTm7CgG8OhsFILy0VBLG85pF6OIpP42NVbZVNsFOc23PYTCkB" crossorigin="anonymous"></script>
   
-  <script src="/js/resume.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138775950-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <script async src="/js/resume.js"></script>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138775950-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'UA-138775950-1');
-  </script>
+      gtag('config', 'UA-138775950-1');
+    </script>
+  
+
   
 
   
